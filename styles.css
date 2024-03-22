@@ -114,8 +114,9 @@ body {
   }
   
   .about p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
+    color: hotpink !important;
   }
   
   .about .btn {
