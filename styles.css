@@ -89,6 +89,7 @@ body {
   .hero .btn {
     color: hotpink !important;
     font-weight: 600;
+    font-size: 20px;
   }
 
   .hero .btn:hover {
