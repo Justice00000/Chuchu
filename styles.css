@@ -210,21 +210,90 @@ body {
     text-align: center;
   }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+  form {
+    display: flex;
+    align-items: center;
+}
+
+  label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+  input[type="email"] {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
   .footer .btn {
-    margin-left: 100px;
+    margin-left: 5px;
     color: white;
     background: linear-gradient(to top, rgba(255, 47, 224, 0.8), rgba(255, 255, 255, 0.8));
     text-decoration: none !important;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
   }
 
   .footer .btn:hover {
     background-color: white;
-    color: hotpink;
+    color: rgb(248, 37, 142);
   }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
 
   .footer h2 {
     text-align: left;
     font-size: 22px;
+  }
+
+  .footer .svgs {
+    margin-right: 30px; /* Add some spacing between icons */
+    cursor: pointer;
   }
   
   .footer p {
