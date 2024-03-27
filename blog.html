@@ -1,81 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChuChu Softies</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="blog.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navigation Bar -->
-  <nav id="navbar">
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <a href="blog.html" class="btn">Blog</a>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Chuchu Softies</title>
+    <meta name="description" content="Description of the page less than 150 characters">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <!– Header –>
+    <header class="header" data-section-theme="dark">
+      <div class="container">
+            <div class="header-container">
+        <div class="header-logo">
+          <a href="#">
+            <img src="Chuchu.png" alt="Techium logo">
+          </a>
         </div>
-        <div class="col">
-          <a href="links.html" class="btn">Links</a>
-        </div>
-        <div class="col">
-          <a href="jay.html" class="btn">Jay</a>
-        </div>
+        <nav class="navbar-menu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+                        <li class="nav-item">
+                <form action="#" method="post" class="form-search">
+                  <input type="search" name="q" id="search-input" placeholder="Search..." aria-label="Search through site content">
+                  <button class="search-button">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="search-icon">
+                      <title>
+                        Search icon
+                      </title>
+                      <path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path>
+                    </svg>
+                  </button>
+                </form>
+              </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </nav>
-  <hr class="pink-line">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="Chuchu.png" alt="background" style="width: 80px; height: auto; margin-bottom:70px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  </nav>
-  <div class="container">
-    <div class="blog">
-       <h1 class="text-center mt-5">Articles and Resources</h1>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-        <div class="col1">
-      <!-- Video Column -->
-      <div class="col-md-6">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/9M_xsdjbMy0?si=AiWKRGZovQMc667O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+    </header>
+    <!– Main –>
+    <main>
+      <!– Hero section –>
+      <section class="section-hero hero-homepage" data-section-theme="dark">
+        <div class="container">
+          <div class="section-body">
+            <section class="section-inner" style="align-items: center;">
+              <h2 class="section-title">Blogs and Latest News</h2>
+              <a href="#" class="button">Shop Now</a>
+            </section>
+          </div>`
         </div>
-      </div> 
-      <!-- Text Column -->
-      <div class="col-md-6">
-        <div class="text-center">
-          <h2>The Global Business School Network 2023</h2>
-          <p>The Global Business School Network competition 2023 hosted over 307 participants in 87 teams from 58 schools in 17 African countries. The competition lasted 6 weeks and was concluded by a final pitch presentation which 11 international judges led. ChuChu Softies emerged in the first place and won a $5000 prize.</p>
+        </section>
+        <div class="section-body">
+          <div class="row">
+            <div class="col-1-2">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9M_xsdjbMy0?si=AiWKRGZovQMc667O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-1-2">
+              <h3 style="font-size: 35px;">The Global Business School Network 2023</h3>
+              <p style="width: 100%; margin-top: 30px;">The Global Business School Network competition 2023 hosted over 307 participants in 87 teams from 58 schools in 17 African countries. The competition lasted 6 weeks and was concluded by a final pitch presentation which 11 international judges led. ChuChu Softies emerged in the first place and won a $5000 prize.</p>
+              </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
