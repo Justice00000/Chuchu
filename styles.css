@@ -459,6 +459,7 @@ ul.row {
   --nav-item-font-weight: normal;
   --nav-item-font-size: var(--font-size-small);
   padding: var(--footer-padding);
+  color: var(--color-white);
 }
 
 .footer-copyright {
@@ -482,6 +483,22 @@ ul.row {
 
 .social-link>svg {
   fill: var(--text-color);
+}
+
+#back-to-top {
+  margin-top: 150px;
+  margin-left: 200px;
+  color: var(--color-primary);
+  text-decoration: none !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+#back-to-top:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  text-decoration: none !important;
 }
 
 /*** 3. SECTION ***/
