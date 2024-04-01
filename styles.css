@@ -430,8 +430,9 @@ ul.row {
 }
 
 .nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   width: 100%;
+  color: var(--color-primary) !important;
 }
 
 /* Header
@@ -441,13 +442,14 @@ ul.row {
   padding: var(--header-padding);
   position: relative;
   z-index: 3;
-  background: transparent;
+  background-color: var(--color-primary) !important;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-primary);
 }
 
 /* Footer
@@ -544,6 +546,7 @@ ul.row {
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: 90rem auto;
+  background-color: var(--color-primary);
 }
 
 .section-hero .section-body {
@@ -565,6 +568,11 @@ ul.row {
   align-items: flex-start;
   justify-content: center;
   min-height: 50vh;
+}
+
+.section-hero .section-inner a:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* Section Latest news
