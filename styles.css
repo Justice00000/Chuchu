@@ -294,7 +294,7 @@ h6 {
 }
 
 a {
-  color: var(--t-color);
+  color: var(--a-color);
   text-decoration: none;
 }
 
@@ -656,6 +656,7 @@ ul.row {
   left: -0.1rem;
   right: -0.1rem;
   bottom: -0.1rem;
+  color: var(--color-primary);
   z-index: 1;
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
