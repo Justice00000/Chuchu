@@ -243,17 +243,18 @@ template {
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 0 2rem;
   --nav-item-link-hover: var(--color-white);
+  --nav-item-color: var(--color-primary) !important;
 
   /** BUTTON **/
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
   --button-border: var(--color-primary) solid 0.2rem;
-  --button-color: var(--color-black);
+  --button-color: var(--color-primary) !important;
   --button-text-decoration: none;
   --button-font-size: var(--font-size-large);
-  --button-hover-color: var(--color-white);
+  --button-hover-color: var(--color-primary) !important;
   --button-hover-text-decoration: none;
-  --button-hover-background: var(--color-primary);
+  --button-hover-background: var(--color-primary) !important;
 
   /** MOTION **/
   --transition-duration: .3s;
@@ -293,7 +294,7 @@ h6 {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--t-color);
   text-decoration: none;
 }
 
@@ -394,6 +395,7 @@ ul.row {
   list-style: none;
   text-align: center;
   display: flex;
+  color: var(--color-primary) !important;
 }
 
 .nav .nav-item {
@@ -423,14 +425,14 @@ ul.row {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--color-white);
+  background-color: var(--color-primary) !important;
   width: 0;
   height: 0.2rem;
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   width: 100%;
   color: var(--color-primary) !important;
 }
@@ -442,14 +444,14 @@ ul.row {
   padding: var(--header-padding);
   position: relative;
   z-index: 3;
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-black) !important;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
 }
 
 /* Footer
@@ -560,10 +562,11 @@ ul.row {
 
 .hero-homepage {
   background-image: url(images/banner-home.jpg);
+  color: var(--color-primary) !important;
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: 90rem auto;
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
 }
 
 .section-hero .section-body {
@@ -571,12 +574,13 @@ ul.row {
 }
 
 .section-hero .section-category {
-  color: var(--color-white);
+  color: var(--color-primary) !important;
   text-transform: uppercase;
 }
 
 .section-hero .section-title {
   margin-bottom: 5rem;
+  color: var(--color-primary);
 }
 
 .section-hero .section-inner {
@@ -588,8 +592,8 @@ ul.row {
 }
 
 .section-hero .section-inner a:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 /* Section Latest news
