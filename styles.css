@@ -242,7 +242,7 @@ template {
   --nav-item-letter-spacing: .04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 0 2rem;
-  --nav-item-link-hover: var(--color-white);
+  --nav-item-link-hover: var(--color-primary);
   --nav-item-color: var(--color-primary) !important;
 
   /** BUTTON **/
