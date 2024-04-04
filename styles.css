@@ -321,7 +321,7 @@ a:active {
 }
 
 .button:hover {
-  color: var(--button-hover-color);
+  color: var(--color-white);
   text-decoration: var(--button-hover-text-decoration);
   background: var(--button-hover-background);
   transition-duration: var(--transition-duration);
@@ -589,6 +589,10 @@ ul.row {
   align-items: flex-start;
   justify-content: center;
   min-height: 50vh;
+}
+
+.section-inner a {
+  font-weight: 800;
 }
 
 .section-hero .section-inner a:hover {
