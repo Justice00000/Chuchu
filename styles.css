@@ -444,14 +444,14 @@ ul.row {
   padding: var(--header-padding);
   position: relative;
   z-index: 3;
-  background-color: var(--color-black) !important;
+  background-color: var(--color-white) !important;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 /* Footer
@@ -566,7 +566,7 @@ ul.row {
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: 90rem auto;
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
 }
 
 .section-hero .section-body {
@@ -574,13 +574,14 @@ ul.row {
 }
 
 .section-hero .section-category {
-  color: var(--color-primary) !important;
+  color: var(--color-white) !important;
   text-transform: uppercase;
 }
 
 .section-hero .section-title {
-  margin-bottom: 5rem;
-  color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 20px;
+  margin-top: 100px;
 }
 
 .section-hero .section-inner {
@@ -596,8 +597,8 @@ ul.row {
 }
 
 .section-hero .section-inner a:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* Section Latest news
@@ -917,7 +918,7 @@ textarea {
   width: 100%;
   padding: 1.2rem;
   line-height: 1;
-  border: .1rem solid var(--color-black);
+  border: .1rem solid var(--color-primary);
   background-color: var(--color-white);
   box-shadow: none;
   outline: 0;
@@ -931,7 +932,7 @@ input[type=email] {
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
-  border: .1rem solid var(--color-grey);
+  border: .1rem solid var(--color-primary);
 }
 
 ::placeholder {
@@ -949,7 +950,7 @@ textarea:focus {
 }
 
 .form-group:focus-within {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-primary);
   transition: .3s;
 }
 
@@ -971,7 +972,7 @@ textarea:focus {
   margin: 0;
   line-height: 1.3;
   letter-spacing: .019rem;
-  color: var(--color-dark-grey);
+  color: var(--color-primary);
   font-size: var(--font-size-small);
   max-height: 0;
   transition: .3s;
@@ -1036,14 +1037,14 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .search-button .search-icon {
-  fill: var(--color-white);
+  fill: var(--color-primary);
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .form-search input[type="search"] {
   display: inline-block;
-  color: var(--color-white);
+  color: var(--color-primary);
   padding-right: 2rem;
   height: 3rem;
   border: 0;
@@ -1061,7 +1062,7 @@ textarea:valid:not(:placeholder-shown) {
   position: relative;
   width: 15rem;
   z-index: 1;
-  border-bottom: .1rem solid var(--color-grey);
+  border-bottom: .1rem solid var(--color-primary);
   padding: 0;
   cursor: text;
 }
