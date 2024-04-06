@@ -454,6 +454,14 @@ ul.row {
   background-color: var(--color-white);
 }
 
+.black-line {
+  background-color: black;
+  height: 2px; /* Adjust the height of the black line as needed */
+  width: 100%; /* Full width of the header */
+  margin-bottom: 100px;
+}
+
+
 /* Footer
     ============================= */
 
