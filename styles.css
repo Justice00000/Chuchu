@@ -455,12 +455,11 @@ ul.row {
 }
 
 .black-line {
-  background-color: black;
-  height: 2px; /* Adjust the height of the black line as needed */
+  background-color: rgb(189, 184, 184);
+  height: 1px; /* Adjust the height of the black line as needed */
   width: 100%; /* Full width of the header */
   margin-bottom: 100px;
 }
-
 
 /* Footer
     ============================= */
