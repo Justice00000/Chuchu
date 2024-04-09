@@ -542,6 +542,8 @@ ul.row {
 
 .section-body {
   padding: var(--section-body-padding);
+  font-size: 20px;
+  width: 100%;
 }
 
 .section-footer {
