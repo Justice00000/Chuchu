@@ -652,7 +652,7 @@ ul.row {
   transform: scale(0.95);
 }
 
-.card-work .card-image img {
+.card-work .card-image iframe {
   height: 30rem;
   width: 100%;
   object-fit: cover;
@@ -660,7 +660,7 @@ ul.row {
 }
 
 .card-work:hover .card-image {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
