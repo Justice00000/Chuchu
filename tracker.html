@@ -19,6 +19,64 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
   </head>
+<style>
+       .tracker-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px hotpink;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            background-color: hotpink;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid hotpink;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: white;
+            color: hotpink;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 130px;
+            font-weight: 700;
+        }
+        
+        button:hover {
+            background-color: hotpink;
+            color: white;
+        }
+        
+      </style>
+
   <body>
     <!– Header –>
     <header class="header" data-section-theme="dark">
@@ -156,7 +214,7 @@
         <hr>
         <div class="row">
           <div class="col-1-2">
-            <p class="footer-copyright">© 2024 Chuchu, made with ♥ by Chuchu Softies.</p>
+            <p class="footer-copyright">© 2024 Chuchu, made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
           </div>
           <div class="col-1-2">
             <ul class="footer-nav nav">
@@ -176,9 +234,4 @@
     </footer>
     <script src="script.js"></script>    
   </body>
-</html>
-
-  
-  <script src="script.js"></script>
-</body>
 </html>
