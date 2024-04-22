@@ -485,14 +485,20 @@ ul.row {
   color: var(--text-color);
 }
 
-.social-link {
+.social-icon {
+  margin-left: 350px;
   display: block;
-  margin-left: 100px;
 }
 
 .social-link>svg {
   fill: var(--text-color);
 }
+
+.social-icon img {
+  width: 30px;
+  margin-right: 10px;
+}
+
 
 #back-to-top {
   margin-top: 150px;
