@@ -19,6 +19,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
   </head>
+  <style>
+    #video-bg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+    
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
   <body>
     <!– Header –>
     <header class="header" data-section-theme="dark">
@@ -62,22 +79,25 @@
           </ul>
         </nav>
       </div>
-            </div>
+      </div>
     </header>
 
     <div class="black-line"></div>
 
     <!– Hero section –>
-      <section class="section-hero hero-homepage" data-section-theme="dark">
-        <div class="container">
-          <div class="section-body">
-            <section class="section-inner">
-              <h2 class="section-title" style="text-align: center;">Chuchu Softies has grown from just a start-up to an award winning social enterprise that remains committed to improving menstrual health for millions across Africa and beyond. Here are some of our proudest achievements.</h2>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform" class="button" style="margin-left: 330px;">Shop Now</a>
+    <section class="section-hero hero-home">
+      <video autoplay muted loop id="video-bg">
+        <source src="Chu.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <div class="section-body">
+          <section class="section-inner">
+            <h2 class="section-title" style="text-align: center;">Chuchu Softies has grown from just a start-up to an award-winning social enterprise that remains committed to improving menstrual health for millions across Africa and beyond. Here are some of our proudest achievements.</h2>
             </section>
-          </div>`
         </div>
-      </section>
+      </div>
+    </section>    
       <section id="about" class="section section-about-us">
         <div class="container">
           <header class="section-header">
@@ -307,7 +327,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blogs</a></li>
                 <li><a href="impacts.html">Impact</a></li>
-                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </div>
             <div class="back">
