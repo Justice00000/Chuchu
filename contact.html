@@ -19,6 +19,46 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
   </head>
+  <style>
+    .team-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .team-member {
+      width: 370px;
+      text-align: center;
+      padding: 20px;
+      background-color: hotpink;
+      border-radius: 50px;
+      transition:  0.3s ease;
+    }
+    .team-member img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      overflow: hidden;
+      transition: transform 1.0s ease-in-out; 
+    }
+    .team-member:hover  img {
+      transform: scale(1.1);
+      transition: var(--transition-duration) var(--transition-cubic-bezier);
+  }
+    .team-member h3 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+    .team-member p {
+      margin: 0;
+      font-size: 14px;
+      color: white;
+    }
+  </style>
   <body>
     <!– Header –>
     <header class="header" data-section-theme="dark">
@@ -147,6 +187,112 @@
           </div>
         </div>
       </section>
+
+      <section id="teams" class="section section-team" style="text-align: center; border-bottom: 1px solid hotpink;">
+        <h2 class="section-title">Introducing Our Dedicated Team</h2>
+        <p class="section-tagline">Meet the Team</p>
+        <div class="team-container">
+          <div class="team-member">
+            <img src="Faith.jpg" alt="Team Member 1">
+            <h3>Faith Chuby Labija</h3>
+            <p>CEO & FOUNDER</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+                <a href="https://www.linkedin.com/in/faith-labija/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="Blessing.jpg" alt="Team Member 2">
+            <h3>Blessing Enemona Ezugwu</h3>
+            <p>DIRECTOR, PROCUREMENT/LOGISTICS OFFICER</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/blessing-ezugwu-6991a7189/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+            </div>
+        </div>
+        
+          <div class="team-member">
+            <img src="Angelina.jpg" alt="Team Member 3">
+            <h3>Angelina Addo</h3>
+            <p>IN-HOUSE CONSULTANT</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/angelina-asenso-addo-mba-8b246416b/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="Arome.jpeg" alt="Team Member 4">
+            <h3>Arome Omali James</h3>
+            <p>REGIONAL CONSULTANT</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/intern2"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="Anne.jpeg" alt="Team Member 5">
+            <h3>Anne Achieng Alwala</h3>
+            <p>OUTREACH OPERATIONS MANAGER</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/anne-alwala/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+          </div>
+          </div>
+          <div class="team-member">
+            <img src="Olivier.jpg" alt="Intern 2">
+            <h3>Oliver Mushimiyemungu</h3>
+            <p>SOCIAL MEDIA MANAGER</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/oliver-mushimiyemungu-238b3022b/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+          </div>
+        </div>
+        </div>
+        <h1 style="font-size: 40px;">Our Interns</h1>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="Justice.jpeg" alt="Intern 1">
+            <h3>Justice Chukwuonye</h3>
+            <p>WEB DEVELOPER AND MANAGER</p>
+            <div class="contact-icons" style="margin-top: -100px;">
+              <a href="https://www.linkedin.com/in/justice-chukwuonye-a93372279/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="Eric.jpg" alt="Intern 2">
+          <h3>Eric Ayamba</h3>
+          <p>ACCOUNTING INTERN</p>
+          <div class="contact-icons" style="margin-top: -100px;">
+            <a href="https://www.linkedin.com/in/ericayamba/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="Christian.jpg" alt="Intern 2">
+        <h3>Christian Narh Fiergbor</h3>
+        <p>PARTNERSHIP MANAGER</p>
+        <div class="contact-icons" style="margin-top: -100px;">
+          <a href="https://www.linkedin.com/in/christian-narh-fiergbor/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="Jessica.jpg" alt="Intern 2">
+      <h3>Jessica Ornella Nett</h3>
+      <p>PARTNERSHIP MANAGER</p>
+      <div class="contact-icons" style="margin-top: -100px;">
+        <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="David.jpg" alt="Intern 2" style="width: 250px;">
+    <h3>Mazimpaka King David</h3>
+    <p>GRAPHIC DESIGNER AND VIDEOGRAPHER</p>
+    <div class="contact-icons" style="margin-top: -100px;">
+      <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+  </div>
+</div> 
+<div class="team-member">
+  <img src="Jessica.jpg" alt="Intern 2">
+  <h3>Jessica Ornella Nett</h3>
+  <p>PARTNERSHIP MANAGER</p>
+  <div class="contact-icons" style="margin-top: -100px;">
+    <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+</div>
+</div>     
+</section>
 
       <!– Footer –>
       <footer class="footer" data-section-theme="dark">
