@@ -30,6 +30,8 @@
           </a>
         </div>
         <nav class="navbar-menu">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon" style="color: hotpink;">&#9776;</label>
           <ul class="nav">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
@@ -47,30 +49,29 @@
               <a href="tracker.html" class="nav-link">Period-Tracker</a>
             </li>
           </ul>
-        </nav>
+        </nav>        
       </div>
             </div>
     </header>
     <div class="black-line"></div>
     <!– Main –>
     <main>
-      <!– Hero section –>
-      <section class="section-hero hero-home">
-        <video autoplay muted loop id="video-bg">
-          <source src="Chuk.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="container">
-          <div class="in">
-          <div class="section-body">
-            <section class="section-inner">
-              <h2 class="section-title">ChuChu Softies manufactures high-quality, safe reusable sanitary pads for girls and women of all skin types to ensure a smooth menstrual cycle.</h2>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform" class="button" style="margin-left: 330px;"><strong>Shop Now</strong></a>
-            </section>
-          </div>`
-          </div>
-        </div>
+      <!-- Hero section -->
+<section class="section-hero hero-home">
+  <video autoplay muted loop id="video-bg">
+    <source src="Chuk.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="container">
+    <div class="section-body">
+      <section class="section-inner">
+        <h2 class="section-title">ChuChu Softies manufactures high-quality, safe reusable sanitary pads for girls and women of all skin types to ensure a smooth menstrual cycle.</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform" class="button"><strong>Shop Now</strong></a>
       </section>
+    </div>
+  </div>
+</section>
+
       <!– Services section –>
       <section id="services" class="section section-services">
         <div class="container">
@@ -282,14 +283,16 @@
               <div class="col-1-2">
                 <img src="softies.jpg" alt="" width="460" height="460">
               </div>
-              <div class="col-1-2" style="font-size: 18px;">
-                <h3>Who are we</h3>
-                <p>We are manufactures of high-quality, safe reusable sanitary pads</p>
-                <h3>Our culture</h3>
-                <p>We believe in the viability of African girl and as such we are committed to help girls and women embrace their motive</p>
-                <h3>How we work</h3>
-                <p>We manufacture reusable sanitary pads and sell them in bulk<br>
-                We also pull donor resources to distribute sanitary pads</p>
+              <div class="col-1-2">
+                <div class="about-content">
+                  <h3>Who are we</h3>
+                  <p>We are manufacturers of high-quality, safe reusable sanitary pads</p>
+                  <h3>Our culture</h3>
+                  <p>We believe in the viability of African girls and as such we are committed to helping girls and women embrace their motive</p>
+                  <h3>How we work</h3>
+                  <p>We manufacture reusable sanitary pads and sell them in bulk<br>
+                    We also pull donor resources to distribute sanitary pads</p>
+                </div>
               </div>
             </div>
           </div>
@@ -297,7 +300,7 @@
             <a href="#" class="button">Learn more about us</a>
           </div>
         </div>
-      </section>
+      </section>      
 
       <section id="partnership" class="section section-partnership">
         <div class="container">
@@ -319,48 +322,49 @@
       </section>
 
       <!– Testimonials section –>
-      <section id="testimonial" class="section section-testimonial" style="border-bottom: 1px solid hotpink;">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-tagline">See why we are trusted</p>
-          </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>The products' flexibility is exceptional; I'll be placing more orders without a doubt.
-                      <cite>Evonne S.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>Thank you so much for your empowerment program. Chuchu softies is awesome!
-                      <cite>Dorrie S.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>I love your system. Definitely worth the investment. I’d be lost without Chuchu Softies.
-                      <cite>Sven H.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <!-- Testimonial section -->
+  <section id="testimonial" class="section section-testimonial" style="border-bottom: 1px solid hotpink;">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-tagline">See why we are trusted</p>
+      </header>
+      <div class="section-body">
+        <ul class="row">
+          <li class="col-1-3">
+            <article class="card-testimonial">
+              <img src="pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
+              <blockquote class="card-quote">
+                <p>The products' flexibility is exceptional; I'll be placing more orders without a doubt.
+                  <cite>Evonne S.</cite>
+                </p>
+              </blockquote>
+            </article>
+          </li>
+          <li class="col-1-3">
+            <article class="card-testimonial">
+              <img src="pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
+              <blockquote class="card-quote">
+                <p>Thank you so much for your empowerment program. Chuchu softies is awesome!
+                  <cite>Dorrie S.</cite>
+                </p>
+              </blockquote>
+            </article>
+          </li>
+          <li class="col-1-3">
+            <article class="card-testimonial">
+              <img src="pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
+              <blockquote class="card-quote">
+                <p>I love your system. Definitely worth the investment. I’d be lost without Chuchu Softies.
+                  <cite>Sven H.</cite>
+                </p>
+              </blockquote>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
     </main>
     <!– Footer –>
     <footer class="footer" data-section-theme="dark">
