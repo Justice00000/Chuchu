@@ -585,14 +585,13 @@ ul.row {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 105, 180, 0.7), transparent); /* Hotpink gradient */
+  height: 100%; 
   z-index: 0;
 }
 
 .hero-homepage {
   background-image: url();
-  color: var(--color-primary) !important;
+  color: var(--color-white) !important;
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: 90rem auto;
@@ -613,6 +612,7 @@ ul.row {
   color: var(--color-white);
   border-radius: 20px;
   margin-top: 10px;
+  font-weight: 900;
 }
 
 .section-hero .section-inner {
