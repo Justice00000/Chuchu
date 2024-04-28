@@ -441,6 +441,10 @@ ul.row {
   display: none;
 }
 
+.menu-icon {
+  display: none; /* Hide by default */
+}
+
 /* Header
     ============================= */
 
@@ -1254,7 +1258,7 @@ form {
   .section-partnership .button {
     margin-left: 70px !important;
     display: block;
-    width: fit-content;
+    width: 100%;
   }
 }
 
@@ -1296,6 +1300,12 @@ form {
   .nav .nav-item+.nav-item {
     margin: 0 0 0 1rem;
   }
+
+  @media only screen and (min-width: 600px) {
+    .menu-icon {
+        display: none;
+    }
+}
 
   /* Adjust padding for footer */
   .footer {

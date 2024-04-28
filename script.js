@@ -25,3 +25,19 @@ function scrollToTop() {
       <p>Predicted Next Period Start Date: ${nextPeriodDate.toDateString()}</p>
     `;
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+    var navItems = document.querySelector('.nav');
+    var menuIcon = document.querySelector('.menu-icon');
+
+    menuToggle.addEventListener('change', function() {
+        if (menuToggle.checked) {
+            navItems.style.display = 'block'; // Show nav items
+            menuIcon.style.display = 'none'; // Hide menu icon
+        } else {
+            navItems.style.display = 'none'; // Hide nav items
+            menuIcon.style.display = 'inline'; // Show menu icon
+        }
+    });
+});
