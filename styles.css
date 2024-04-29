@@ -650,6 +650,7 @@ ul.row {
   background-color: hotpink;
   z-index: -1; /* Ensure the video background is behind the hero section */
   object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 .in {
