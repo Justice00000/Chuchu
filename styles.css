@@ -635,8 +635,8 @@ ul.row {
 }
 
 .section-hero .section-inner a:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 #video-bg {
