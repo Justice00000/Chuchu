@@ -1263,6 +1263,7 @@ form {
     max-width: 100%; /* Adjust the maximum width for smaller screens */
     height: 100%;
     margin: 0 auto; /* Center the image */
+    text-align: center;
   }
 
   .button {
@@ -1349,7 +1350,54 @@ form {
   }
 }
 
-/* For screens larger than 768px (e.g., tablets and desktops) */
-@media (min-width: 768px) {
-  /* Add specific styles for larger screens if needed */
+@media (max-width: 768px) {
+  .col-1-2 {
+      width: 50%; /* On larger screens, each column takes 50% width */
+  }
+
+.video-wrapper {
+  width: 100%;
+  margin-bottom: 20px; /* Add some space between video and text */
+}
+
+ iframe {
+  width: 100%;
+}
+
+.text-wrapper {
+  width: 100%;
+}
+
+.section-body .row {
+  flex-direction: column;
+}
+
+.section-latest-news .container {
+  flex-direction: column;
+}
+
+.section-latest-news img {
+  width: 100%;
+}
+
+.section-body .col-1-2 {
+  width: 100%;
+}
+
+.section-body h4 {
+  margin-left: 250px !important;
+}
+
+.section-latest-news h2 {
+  font-size: 20px;
+}
+
+.section-volunteer {
+  flex-direction: column;
+}
+
+.section-volunteer .button {
+  margin-left: 100px !important;
+  width: 50%;
+}
 }
