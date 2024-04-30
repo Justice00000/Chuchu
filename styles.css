@@ -1151,6 +1151,12 @@ form {
 /* For screens smaller than 768px (e.g., smartphones) */
 
 @media (max-width: 767px) {
+  body {
+    width: 100% !important;
+    margin: 0 !important; /* Optionally reset margin to ensure no extra space */
+    padding: 0 !important; /* Optionally reset padding */
+}
+
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -1189,28 +1195,40 @@ form {
     margin-top: 20px;
   }
 
-  .footer .links {
-    text-align: center;
+  .footer .sitemap {
+    text-align: left;
+    display: none;
   }
 
   .footer .social-icons {
     text-align: center;
-    margin-left: -200px !important;
+    margin-left: -190px;
+    margin-top: -160px;
+  }
+
+  .footer .gmail {
+    margin-left: -100px;
   }
 
   .footer .social-icons img {
     margin-left: 10px;
+    
   }
 
   .footer-address {
     margin-left: 120px;
     margin-top: -110px;
+    display: none;
   }
 
   #back-to-top {
     width: 50%;
-    margin-left: 130px;
+    margin-left: 180px;
     margin-top: 125px;
+  }
+
+  .footer-copyright {
+    text-align: center;
   }
 }
 
@@ -1259,7 +1277,19 @@ form {
   .section-partnership .button {
     margin-left: 70px !important;
     display: block;
-    width: 100%;
+    width: 45%;
+  }
+
+  .section-partnership h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 17px;
   }
 }
 
