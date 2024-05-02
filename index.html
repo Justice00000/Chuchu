@@ -19,6 +19,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
   </head>
+  <style>
+    .section-inner .button {
+      align-items: center;
+      margin-left: 350px;
+    }
+    @media (max-width: 767px) {
+      .section-inner .button {
+        font-size: 20px;
+        width: 60%;
+        margin-left: 40px !important;
+      }
+      .section-hero .section-title {
+        width: 100%;
+        font-size: 30px !important;
+      }
+    }
+  </style>
   <body>
     <!– Header –>
     <header class="header" data-section-theme="dark">
@@ -126,6 +143,7 @@
               <p class="section-tagline">Our Proud Supporters</p>
             </header>
             <div class="section-body">
+              <div class="logo">
               <div class="row">
                 <div class="col-1-4">
                   <article class="card-work">
@@ -265,6 +283,7 @@
                       </div>
                     </div>
                   </article>
+                </div>
                 </div>
               </div>
             </div>
