@@ -581,7 +581,7 @@ ul.row {
     .section-hero {
       position: relative;
       margin-top: -8.5rem;
-      z-index: 1; /* Adjust the z-index to position the hero section above other elements */
+      z-index: -1; /* Adjust the z-index to position the hero section above other elements */
     }
 
 .section-hero::before {
@@ -602,11 +602,13 @@ ul.row {
   background-size: 90rem auto;
   background-color: var(--color-primary);
   position: relative;
+  z-index: -1;
 }
 
 .section-hero .section-body {
   padding: 10rem 4rem;
   color: var(--color-white);
+  z-index: 9999;
 }
 
 .section-hero .section-category {
@@ -619,25 +621,24 @@ ul.row {
   font-weight: 900;
   font-size: 50px;
   margin-top: 200px;
+  z-index: 9999;
 }
 
 .section-hero .section-inner {
   flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
   margin-top: -200px;
-  z-index: 1;
-}
-
-.section-inner a {
-  font-weight: 800;
-  z-index: 1;
+  font-weight: 900 !important;
+  z-index: 9999 !important;
 }
 
 .section-hero .section-inner a:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
+  z-index: 9999;
 }
 
 #video-bg {
@@ -649,7 +650,7 @@ ul.row {
   width: 100%;
   height: 100%;
   background-color: hotpink;
-  z-index: -1; /* Ensure the video background is behind the hero section */
+  z-index: -9999; /* Ensure the video background is behind the hero section */
   object-fit: cover;
   background-repeat: no-repeat;
 }
@@ -1260,6 +1261,7 @@ form {
     font-size: 16px;
     padding: 12px 24px;
     margin-left: 50px;
+    z-index: 9999;
   }
 
   #video-bg {
@@ -1291,6 +1293,7 @@ form {
     width: 150px;
     height: 10%;
     margin-right: 50px;
+    z-index: 0;
   }
 }
 
@@ -1359,7 +1362,7 @@ form {
     flex-direction: row !important;
   }
 
-  .section-works h3 {
+  .section-works h2 {
     align-items: center !important;
     width: 100% !important;
     margin-left: 20px !important;
@@ -1466,10 +1469,12 @@ form {
 
 .section-body .button {
   margin-left: 100px !important;
+  z-index: 0;
 }
 
 .section-inner .button {
   margin-left: 10px !important;
+  z-index: 0;
 }
 }
 
@@ -1492,6 +1497,7 @@ form {
     font-size: 25px;
     width: 100%;
     margin-left: 120px !important;
+    z-index: 0;
   }
 
   .section-inner p {
@@ -1512,6 +1518,7 @@ form {
     height: 100%;
     font-size: 40px;
     margin-top: 200px !important;
+    z-index: 9999;
   }
 
   #tracker-form button {

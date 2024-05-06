@@ -20,6 +20,15 @@
     <link rel='stylesheet' href='styles.css'>
   </head>
 <style>
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none; /* Ensure the overlay doesn't intercept click events */
+  }
 
   .section-inner {
     flex-direction: column;
@@ -126,6 +135,7 @@
       <section class="section-hero hero-homepage" data-section-theme="dark">
         <div class="container">
           <div class="section-body">
+            <div class="overlay"></div>
             <section class="section-inner">
               <h2 class="section-title" style="text-align: center; color:white;">Our Period Tracker is a user-friendly tool that allows you to effortlessly monitor and manage your menstrual cycle.</h2>
             </section>
