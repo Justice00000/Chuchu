@@ -34,6 +34,35 @@
       margin-left: 350px;
       z-index: 9999;
     }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  .faq-item {
+      margin-bottom: 20px;
+  }
+  .question {
+      font-weight: bold;
+      cursor: pointer;
+      position: relative; /* Add this */
+      font-size: 25px;
+  }
+  .question::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+  }
+  .answer {
+      display: none;
+      margin-top: 10px;
+      color: hotpink;
+  }
+  .expanded::after {
+      transform: translateY(-50%) rotate(45deg);
+  }
     @media (max-width: 767px) {
       .section-inner .button {
         font-size: 20px;
@@ -396,6 +425,27 @@
       </div>
     </div>
   </section>
+
+  <div class="faq-container">
+    <h1 style="text-align: center; color: hotpink; font-size: 40px;">FAQs</h1>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer1')">What is menstruation?</div>
+        <div class="answer" id="answer1">Menstruation is a natural process in which the lining of the uterus sheds through the vagina, typically occurring monthly in women of reproductive age.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('answer2')">When do most girls start menstruating?</div>
+        <div class="answer" id="answer2">Most girls start menstruating between the ages of 10 and 15, although the exact age can vary widely.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer('answer3')">How long does a typical menstrual cycle last?</div>
+      <div class="answer" id="answer3">A typical menstrual cycle lasts between 21 and 35 days, with menstruation usually lasting between 2 and 7 days.</div>
+  </div>
+  <div class="faq-item">
+      <div class="question" onclick="toggleAnswer('answer4')">What are common menstrual disorders?</div>
+      <div class="answer" id="answer4">Common menstrual disorders include dysmenorrhea (painful periods), menorrhagia (heavy menstrual bleeding), and amenorrhea (absence of menstruation).</div>
+  </div>
+    <!-- Add more FAQ items as needed -->
+</div>
     </main>
     <!– Footer –>
     <footer class="footer" data-section-theme="dark">
@@ -464,6 +514,19 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleAnswer(answerId) {
+        var answer = document.getElementById(answerId);
+        var question = answer.previousElementSibling;
+        if (answer.style.display === "none") {
+            answer.style.display = "block";
+            question.classList.add("expanded");
+        } else {
+            answer.style.display = "none";
+            question.classList.remove("expanded");
+        }
+    }
+  </script>
     <script src="script.js"></script>    
   </body>
 </html>
