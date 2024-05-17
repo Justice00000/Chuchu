@@ -164,7 +164,17 @@
                 Please submit an inquiry and we’ll get back to you as soon as possible</h4>
           </div>
           <div class="section-footer">
-            <a href="chat.html" class="button">Get in touch</a>
+            <a href="https://forms.gle/5A3W1jZbBaxvdEQQ9" class="button">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact" style="border-bottom: 1px solid hotpink;">
+        <div class="container">
+          <div class="section-body">
+            <h4 style="text-align: center; font-size: 25px;">For Orders and Purchase<br>
+              Click the link below</h4>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform" class="button" style="margin-left: 400px;">Shop Now</a>
           </div>
         </div>
       </section>
@@ -172,7 +182,7 @@
       <section id="partnership" class="section section-partnership" style="border-bottom: 1px solid hotpink;">
         <div class="container">
           <header class="section-header">
-            <h2 class="section-title">Join Us in Making a Difference</h2>
+            <h2 class="section-title" style="color: black !important;">Join Us in Making a Difference</h2>
             <p class="section-tagline">Partner with Chuchu Softies</p>
           </header>
           <div class="section-body">
@@ -204,7 +214,7 @@
       <section id="works" class="section section-works" data-section-theme="">
         <div class="container">
           <header class="section-header">
-            <h2 class="section-title">Come say hello at</h2>
+            <h2 class="section-title" style="color: black !important;">Come say hello at</h2>
             <h2 class="section-tagline">Our head offfice</h2>
           </header>
           <div class="section-body">
@@ -241,7 +251,7 @@
       </section>
 
       <section id="teams" class="section section-team" style="text-align: center; border-bottom: 1px solid hotpink;">
-        <h2 class="section-title">Introducing Our Dedicated Team</h2>
+        <h2 class="section-title" style="color: black !important;">Introducing Our Dedicated Team</h2>
         <p class="section-tagline">Meet the Team</p>
         <div class="team-container">
           <div class="team-member">
@@ -267,14 +277,6 @@
             <p>IN-HOUSE CONSULTANT</p>
             <div class="contact-icons" style="margin-top: -100px;">
               <a href="https://www.linkedin.com/in/angelina-asenso-addo-mba-8b246416b/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-            </div>
-          </div>
-          <div class="team-member">
-            <img src="Arome.jpeg" alt="Team Member 4">
-            <h3>Arome Omali James</h3>
-            <p>REGIONAL CONSULTANT</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href=""><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
             </div>
           </div>
           <div class="team-member">
@@ -307,7 +309,7 @@
         <div class="team-member">
           <img src="Eric.jpg" alt="Intern 2">
           <h3>Eric Ayamba</h3>
-          <p>ACCOUNTING INTERN</p>
+          <p>ACCOUNTING MANAGER</p>
           <div class="contact-icons" style="margin-top: -100px;">
             <a href="https://www.linkedin.com/in/ericayamba/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
         </div>
@@ -333,7 +335,7 @@
     <h3>Mazimpaka King David</h3>
     <p>GRAPHIC DESIGNER AND VIDEOGRAPHER</p>
     <div class="contact-icons" style="margin-top: -100px;">
-      <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+      <a href="https://www.linkedin.com/in/mazimpaka-king-david/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
   </div>
 </div> 
 <div class="team-member">
@@ -345,7 +347,21 @@
 </div>
 </div>     
 </section>
+<button class="message-widget" onclick="openChat()">💬</button>
 
+<div class="chat-widget" id="chat-widget">
+    <div class="chat-header">
+        <h3>Chuchu Bot</h3>
+        <button id="close-button">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <div class="bot-message">Welcome to Chuchu Bot</div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+</div>
 <!– Footer –>
 <footer class="footer" data-section-theme="dark">
   <div  class="container">
@@ -413,6 +429,9 @@
     </div>
   </div>
 </footer>
-<script src="script.js"></script>    
+<script src="app.js"></script>
+<script src="chat.js"></script>
+<script src="script.js"></script>
+<script src="server.js"></script>    
 </body>
 </html>
