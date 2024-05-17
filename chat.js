@@ -12,13 +12,6 @@ function sendMessage() {
     chatMessages.appendChild(messageDiv);
     document.getElementById("user-input").value = "";
 
-    // Check if the message is a greeting
-    if (isGreeting(userInput)) {
-        var greetingResponse = "Hello! How can I assist you today?";
-        displayBotMessage(greetingResponse);
-        return;
-    }
-
     // Make AJAX request to backend server
     fetch("http://localhost:3000/webhook", {
         method: "POST",
