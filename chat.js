@@ -12,6 +12,9 @@ function sendMessage() {
     chatMessages.appendChild(messageDiv);
     document.getElementById("user-input").value = "";
 
+    // Scroll to the bottom of the chat
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
     // Make AJAX request to backend server
     fetch("http://localhost:3000/webhook", {
         method: "POST",
@@ -32,15 +35,20 @@ function sendMessage() {
         botProfilePic.className = "bot-profile-pic";
         
         botMessageDiv.appendChild(botProfilePic);
-        botMessageDiv.innerHTML += data.response; // Append the response content
+        var botText = document.createElement("span");
+        botText.innerHTML = data.response; // Append the response content
+        botMessageDiv.appendChild(botText);
 
         chatMessages.appendChild(botMessageDiv);
+        // Scroll to the bottom of the chat
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     })
     .catch(error => {
         console.error("Error:", error);
     });
 }
 
+// Event listeners
 document.getElementById("send-button").addEventListener("click", sendMessage);
 
 document.getElementById("user-input").addEventListener("keypress", function(event) {
