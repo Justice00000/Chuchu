@@ -31,11 +31,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '$1')));
 
 // Define a GET route for the root endpoint
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, '$1', 'index.html'));
 });
 
 // Define a POST route to handle incoming messages from the chat widget
