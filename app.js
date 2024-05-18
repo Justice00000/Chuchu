@@ -16,13 +16,13 @@ function sendMessage() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     // Make AJAX request to backend server
-    fetch("/webhook", { // Use a relative URL
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ message: userInput })
-    })
+    fetch("https://chuchu-softies.vercel.app/webhook", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ message: userInput })
+})
     .then(response => response.json())
     .then(data => {
         // Display bot response in chat
