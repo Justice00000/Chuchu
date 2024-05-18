@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 // Sample data (replace with your actual data)
 const faqs = [
@@ -26,13 +27,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Define a GET route for the root endpoint
-app.get('/', (req, res) => {
-    res.send('Welcome to the chatbot server!');
-});
-
 // Configure CORS
 app.use(cors());
+
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Define a GET route for the root endpoint
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Define a POST route to handle incoming messages from the chat widget
 app.post('/webhook', (req, res) => {
