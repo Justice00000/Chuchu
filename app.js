@@ -16,13 +16,13 @@ function sendMessage() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     // Make AJAX request to backend server
-    fetch("https://chuchu-softies.vercel.app/webhook", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ message: userInput })
-})
+    fetch("http://localhost:3000/webhook", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: userInput })
+    })
     .then(response => response.json())
     .then(data => {
         // Display bot response in chat
@@ -34,9 +34,9 @@ function sendMessage() {
         botProfilePic.alt = "Bot Profile Picture";
         botProfilePic.className = "bot-profile-pic";
         
-        botMessageDiv.appendChild(botProfilePic);
         var botText = document.createElement("span");
         botText.innerHTML = data.response; // Append the response content
+        botMessageDiv.appendChild(botProfilePic);
         botMessageDiv.appendChild(botText);
 
         chatMessages.appendChild(botMessageDiv);
