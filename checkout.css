@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: hotpink;
+}
+
+header {
+    background-color: hotpink;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+.checkout-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+form {
+    background-color: hotpink;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    form h1, form h3 {
+        color: white;
+    }
+
+    form label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="number"],
+    form select,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid hotpink;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form button {
+        background-color: white;
+        color: hotpink;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        form button:hover {
+            background-color: lightgray;
+        }
+
+#no-payment-methods {
+    margin-top: 10px;
+}
+
+#order-summary {
+    background-color: white;
+    color: hotpink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
