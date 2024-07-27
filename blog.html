@@ -1,206 +1,231 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Chuchu Softies</title>    
-    <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
-    <meta name="description" content="Description of the page less than 150 characters">
-    <link rel="icon" type="image/png" href="images/favicon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='styles.css'>
-  </head>
-  <style>
-    .menu-icon{
-      color: hotpink;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
-      pointer-events: none; /* Ensure the overlay doesn't intercept click events */
-    }
-  </style>
-  <body>
-    <!– Header –>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chuchu Softies</title>
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
+  <meta name="description" content="Description of the page less than 150 characters">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<style>
+  .menu-icon {
+    color: hotpink;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
+    pointer-events: none;
+    /* Ensure the overlay doesn't intercept click events */
+  }
+</style>
+
+<body>
+  <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
-            <div class="header-container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="Chuchu.png" alt="Chuchu logo">
-          </a>
+        <div class="header-container">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="Chuchu.png" alt="Chuchu logo">
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a href="impacts.html" class="nav-link">Impacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="tracker.html" class="nav-link">Period-Tracker</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navbar-menu">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="impacts.html" class="nav-link">Impacts</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="tracker.html" class="nav-link">Period-Tracker</a>
-            </li>
-          </ul>
-        </nav>        
       </div>
-            </div>
     </header>
     <div class="black-line"></div>
     <!– Main –>
-    <main>
-      <!– Hero section –>
-      <section class="section-hero hero-home" style="width: 100%; height:500px;">
-        <video autoplay muted loop id="video-bg">
-          <source src="Chuk.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        </section>
-        <div class="section-body">
-          <div class="vid">
-          <div class="row">
-            <div class="col-1-2">
-              <div class="video-wrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/9M_xsdjbMy0?si=AiWKRGZovQMc667O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            </div>
-            <div class="col-1-2">
-              <div class="text-wrapper">
-              <h3 style="font-size: 35px;">The Global Business School Network 2023</h3>
-              <p style="width: 100%; margin-top: 30px;">The Global Business School Network competition 2023 hosted over 307 participants in 87 teams from 58 schools in 17 African countries. The competition lasted 6 weeks and was concluded by a final pitch presentation which 11 international judges led. ChuChu Softies emerged in the first place and won a $5000 prize.</p>
-              </div>
-              </div>
-              </div>
-        </div>
-        </div>
-        <!– Latest news section –>
-        <section id="latest_news" class="section section-news">
-          <div class="container">
-            <header class="section-header">
-              <h2 class="section-title" style="color: black;">Latest News</h2>
-            </header>
-            <div class="section-body">
-              <div class="news">
-                <div class="row articles">
-                  <div class="col-12 col-md-4">
-                    <article class="card-blog">
-                      <div>
-                        <img src="im.jpg" alt="" width="305" height="305">
-                      </div>
-                      <p class="card-category">Career</p>
-                      <h3><a href="#">The African Action Climate Adaptation Challenge 2022</a></h3>
-                      <p>ChuChu Softies was mentioned among the 15 most promising climate action startups in Ghana from a pool of over 77 startups.</p>
-                      <small>AACA</small>
-                    </article>
+      <main>
+        <!– Hero section –>
+          <section class="section-hero hero-home">
+            <img src="image.jpeg" alt="" width="100%" height="500px">
+          </section>
+          <div class="section-body">
+            <div class="vid">
+              <div class="row">
+                <div class="col-1-2">
+                  <div class="video-wrapper">
+                    <img src="nbl.jpeg" alt="" width="560" height="315">
                   </div>
-                  <div class="col-12 col-md-4">
-                    <article class="card-blog">
-                      <div>
-                        <img src="cola.png" alt="" width="305" height="305">
-                      </div>
-                      <p class="card-category">Empowerment</p>
-                      <h3><a href="#">The Coca-Cola Foundation</a></h3>
-                      <p>ChuChu Softies 2023 outreach programs were proudly sponsored by the Coca-Cola Foundation in partnership with Ashesi University through the $90000 grant awarded to Ashesi.</p>
-                      <small>Coca-Cola Foundation</small>
-                    </article>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <article class="card-blog">
-                      <div>
-                        <img src="Reusable.jpg" alt="" width="305" height="305">
-                      </div>
-                      <p class="card-category">Career</p>
-                      <h3><a href="blog.html">The Ashesi Venture Support Program 2022</a></h3>
-                      <p>ChuChu Softies is listed among the selected ventures for the Ashesi venture support program for 2022.</p>
-                      <small>AVSP</small>
-                    </article>
+                </div>
+                <div class="col-1-2">
+                  <div class="text-wrapper">
+                    <h3 style="font-size: 35px;">A Key Milestone Achieved in Toronto</h3>
+                    <p style="width: 100%; margin-top: 30px;">I'm thrilled to announce that Chuchu Softies is making
+                      waves globally! Our CEO, Faith Labija, recently had a successful
+                      trip to Canada, showcasing our mission at top conferences like Collision 2024, the Nobellum BIS
+                      Summit, and the Global Startups Conference and securing
+                      valuable investments and
+                      partnerships. We’re committed to improving menstrual health for young girls in Africa, and we’d
+                      love your support as we
+                      continue to grow. <strong style="color: hotpink;"> Stay tuned for more exciting updates!</strong>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>                        
-        <!– Footer –>
-        <footer class="footer" data-section-theme="dark">
-          <div  class="container">
-            <div class="row">
-              <div class="col-1-2">
-                <div class="img">
-                <img src="Chuchu.png" alt="Chuchu logo">
-                </div>
-                <address class="footer-address">
-                  41. Victoria Ironsi Crescent,<br>
-                  4th Avenue,<br>
-                  Gwarimpa,
-                  Abuja FCT,
-                  Nigeria
-                </address>
-              </div>
-              <div class="col-1-2">
-                <div class="social-icons">
-                  <div class="lik">
-                  <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
-                    <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
-                  </a>
+          <!– Latest news section –>
+            <section id="latest_news" class="section section-news">
+              <div class="container">
+                <header class="section-header">
+                  <h2 class="section-title" style="color: black;">Latest News</h2>
+                </header>
+                <div class="section-body">
+                  <div class="news">
+                    <div class="row articles">
+                      <div class="col-12 col-md-4">
+                        <article class="card-blog">
+                          <div>
+                            <iframe width="305" height="305"
+                              src="https://www.youtube.com/embed/9M_xsdjbMy0?si=AiWKRGZovQMc667O"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div>
+                          <p class="card-category">Career</p>
+                          <h3><a href="blog.html">The Global Business School Network 2023</a></h3>
+                          <p>The Global Business School Network competition 2023 hosted
+                            over 307 participants in 87 teams from 58 schools in 17 African countries. The competition
+                            lasted
+                            6 weeks and was concluded by a final pitch presentation which 11 international judges led.
+                            ChuChu
+                            Softies emerged in the first place and won a $5000 prize.</p>
+                          <small>AVSP</small>
+                        </article>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <article class="card-blog">
+                          <div>
+                            <img src="im.jpg" alt="" width="305" height="305">
+                          </div>
+                          <p class="card-category">Career</p>
+                          <h3><a href="#">The African Action Climate Adaptation Challenge 2022</a></h3>
+                          <p>ChuChu Softies was mentioned among the 15 most promising climate action startups in Ghana
+                            from a pool of over 77 startups.</p>
+                          <small>AACA</small>
+                        </article>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <article class="card-blog">
+                          <div>
+                            <img src="cola.png" alt="" width="305" height="305">
+                          </div>
+                          <p class="card-category">Empowerment</p>
+                          <h3><a href="#">The Coca-Cola Foundation</a></h3>
+                          <p>ChuChu Softies 2023 outreach programs were proudly sponsored by the Coca-Cola Foundation in
+                            partnership with Ashesi University through the $90000 grant awarded to Ashesi.</p>
+                          <small>Coca-Cola Foundation</small>
+                        </article>
+                      </div>
+
+                    </div>
                   </div>
-                  <div class="gmail">
-                  <a href="mailto:info@chuchusofties.com" class="social-icon">
-                    <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
-                  </a>
+                </div>
+              </div>
+            </section>
+            <!– Footer –>
+              <footer class="footer" data-section-theme="dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1-2">
+                      <div class="img">
+                        <img src="Chuchu.png" alt="Chuchu logo">
+                      </div>
+                      <address class="footer-address">
+                        41. Victoria Ironsi Crescent,<br>
+                        4th Avenue,<br>
+                        Gwarimpa,
+                        Abuja FCT,
+                        Nigeria
+                      </address>
+                    </div>
+                    <div class="col-1-2">
+                      <div class="social-icons">
+                        <div class="lik">
+                          <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
+                            <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
+                          </a>
+                        </div>
+                        <div class="gmail">
+                          <a href="mailto:info@chuchusofties.com" class="social-icon">
+                            <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
+                          </a>
+                        </div>
+                        <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
+                          <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
+                        </a>
+                      </div>
+                      <div class="links" style="display: flex; margin-top:-100px;">
+                        <div class="sitemap">
+                          <h4>Site Map</h4>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="blog.html">Blogs</a></li>
+                          <li><a href="impacts.html">Impact</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+                      </div>
+                    </div>
                   </div>
-                    <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
-                      <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
-                    </a>
+                  <hr>
+                  <div class="row">
+                    <div class="col-1-2">
+                      <p class="footer-copyright">© 2024 Chuchu, made with <strong
+                          style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
+                    </div>
+                    <div class="col-1-2">
+                      <ul class="footer-nav nav">
+                        <li class="footer-nav-item nav-item">
+                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                            class="footer-nav-link">Terms of use</a>
+                        </li>
+                        <li class="footer-nav-item nav-item">
+                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                            class="footer-nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="footer-nav-item nav-item">
+                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                            class="footer-nav-link">Cookie Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="links" style="display: flex; margin-top:-100px;">
-                <div class="sitemap">
-                  <h4>Site Map</h4>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blogs</a></li>
-                    <li><a href="impacts.html">Impact</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </div>
-                </div>
-                <div class="back">
-                  <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-1-2">
-                <p class="footer-copyright">© 2024 Chuchu, made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
-              </div>
-              <div class="col-1-2">
-                <ul class="footer-nav nav">
-                  <li class="footer-nav-item nav-item">
-                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Terms of use</a>
-                  </li>
-                  <li class="footer-nav-item nav-item">
-                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Privacy Policy</a>
-                  </li>
-                  <li class="footer-nav-item nav-item">
-                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Cookie Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <script src="script.js"></script>    
-      </body>
-    </html>    
+              </footer>
+              <script src="script.js"></script>
+</body>
+
+</html>
