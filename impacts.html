@@ -1,98 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Chuchu Softies</title>
-    <!-- Google Analytics Tracking Code -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WK682P3LRW');
-</script>
-    <meta name="description" content="Description of the page less than 150 characters">
-    <link rel="icon" type="image/png" href="images/favicon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='styles.css'>
-  </head>
-  <style>
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
-      pointer-events: none; /* Ensure the overlay doesn't intercept click events */
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chuchu Softies</title>
+  <!-- Google Analytics Tracking Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WK682P3LRW');
+  </script>
+  <meta name="description" content="Description of the page less than 150 characters">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<style>
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
+    pointer-events: none;
+    /* Ensure the overlay doesn't intercept click events */
+  }
+
+  @media (max-width: 767px) {
+    .section-inner {
+      height: 20% !important;
     }
-    @media (max-width: 767px) {
-    .section-hero .section-title {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1;
+
+    .section-hero .section-body {
       width: 100%;
-      font-size: 30px;
+      font-size: 15px !important;
+      height: 100px;
+      margin-bottom: 150px !important;
+    }
+
+    .section-hero .section-title {
+      font-size: 15px;
+      width: 120%;
+      margin-bottom: 50px;
     }
   }
-  </style>
-  <body>
-    <!– Header –>
+</style>
+
+<body>
+  <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
-            <div class="header-container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="Chuchu.png" alt="Chuchu logo">
-          </a>
+        <div class="header-container">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="Chuchu.png" alt="Chuchu logo">
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" style="color: hotpink;">&#9776;</label>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a href="impacts.html" class="nav-link">Impacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="tracker.html" class="nav-link">Period-Tracker</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navbar-menu">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon" style="color: hotpink;">&#9776;</label>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="impacts.html" class="nav-link">Impacts</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="tracker.html" class="nav-link">Period-Tracker</a>
-            </li>
-          </ul>
-        </nav>        
       </div>
-            </div>
     </header>
     <div class="black-line"></div>
 
     <!– Hero section –>
-    <section class="section-hero hero-home">
-      <video autoplay muted loop id="video-bg">
-        <source src="Chu.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>      
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="in">
-        <div class="section-body">
-          <section class="section-inner">
-            <h2 class="section-title" style="text-align: center; color: white;">Chuchu Softies has grown from just a start-up to an award-winning social enterprise that remains committed to improving menstrual health for millions across Africa and beyond. Here are some of our proudest achievements.</h2>
-            </section>
+      <section class="section-hero hero-home">
+        <video autoplay muted loop id="video-bg">
+          <source src="Chu.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="in">
+            <div class="section-body">
+              <section class="section-inner">
+                <h2 class="section-title" style="text-align: center; color: white;">Chuchu Softies has grown from just a
+                  start-up to an award-winning social enterprise that remains committed to improving menstrual health
+                  for millions across Africa.</h2>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-    </section>    
+      </section>
       <section id="about" class="section section-about-us">
         <div class="container">
           <header class="section-header">
@@ -102,16 +116,25 @@
           <div class="section-body">
             <div class="row">
               <div class="col-1-2">
-                <iframe width="460" height="460" src="https://www.youtube.com/embed/qYhEYwZxTIg?si=r-FKRqwozcZVFj02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="460" height="460" src="https://www.youtube.com/embed/qYhEYwZxTIg?si=r-FKRqwozcZVFj02"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="col-1-2" style="font-size: 18px;">
                 <h1 style="font-size: 30px;">A Message from our Founder</h1>
-                <p>Join us as we revisit the transformative projects, partnerships, and initiatives that have shaped Chuchu Softies into the remarkable organization it is today. From providing access to essential resources to underserved communities to promoting education and empowerment for women and children, our founder shares personal insights and experiences that highlight the meaningful impact of our work.
+                <p>Join us as we revisit the transformative projects, partnerships, and initiatives that have shaped
+                  Chuchu Softies into the remarkable organization it is today. From providing access to essential
+                  resources to underserved communities to promoting education and empowerment for women and children,
+                  our founder shares personal insights and experiences that highlight the meaningful impact of our work.
 
-                  As we look ahead to the future, let this video serve as a reminder of the power of collective action and the potential we have to create lasting change. Together, we will continue to innovate, inspire, and uplift, leaving a legacy of compassion, resilience, and hope for generations to come.
-                  
-                  Thank you for being a part of the Chuchu Softies journey. Together, we are making a difference—<strong style="color:hotpink;">one softie at a time.</strong></p>
-                  <h4 style="font-style: italic; font-size:15px; margin-left: 350px;"><strong>Faith Labija</strong><br>
+                  As we look ahead to the future, let this video serve as a reminder of the power of collective action
+                  and the potential we have to create lasting change. Together, we will continue to innovate, inspire,
+                  and uplift, leaving a legacy of compassion, resilience, and hope for generations to come.
+
+                  Thank you for being a part of the Chuchu Softies journey. Together, we are making a difference—<strong
+                    style="color:hotpink;">one softie at a time.</strong></p>
+                <h4 style="font-style: italic; font-size:15px; margin-left: 350px;"><strong>Faith Labija</strong><br>
                   C.E.O/Founder</h4>
               </div>
             </div>
@@ -127,236 +150,255 @@
           </header>
           <div class="section-body">
             <div class="row">
-                <div class="col-1-2">
-                    <div class="card-services">
-                        <h3 class="card-title"><a><strong style="font-size: 50px;">500</strong><p><i>+ menstrual kits distributed</i></p></a></h3>
-                    </div>
-                </div>
-                <div class="col-1-2">
-                    <div class="card-services">
-                        <h3 class="card-title"><a><strong style="font-size: 50px;">50</strong><p><i>% reduction of waste generated</i></p></a></h3>
-                    </div>
-                </div>
-                <div class="col-1-2">
-                    <div class="card-services">
-                        <h3 class="card-title"><a><strong style="font-size: 50px;">750</strong><p><i> + girls and women empowered</i></p></a></h3>
-                    </div>
-                </div>
-                <div class="col-1-2">
-                    <div class="card-services">
-                        <h3 class="card-title"><a><strong style="font-size: 50px;">15</strong><p><i>partnership acquired over the years</i></p></a></h3>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-  </section>
-
-  <!– Latest news section –>
-      <section id="latest_news" class="section section-latest-news">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" style="color: black;">We’ve become the world’s leading social enterprise manufacturing ultra-modern reusable sanitary pads</h2>
-          </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-blog">
-                  <div>
-                   <img src="chuc.jpg" alt="" width="305" height="305">
-                  </div>
-                  <h2>We help break menstrual taboos by developing culturally applicable tools.</h2>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-blog">
-                  <div>
-                    <img src="people.webp" alt="" width="305" height="305">
-                  </div>
-                  <h2 style="color: hotpink;">Our reusable menstrual kits have reached over 500 women and girls.</h2>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-blog">
-                  <div>
-                    <img src="women.png" alt="" width="305" height="305">
-                    </div>
-                  <h2>Building menstrual health knowledge.</h2>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section section-about-us">
-        <div class="container" style="background-color: hotpink; padding: 50px, 50px, 50px, 50px; border-radius: 20px;">
-          <div class="section-body">
-            <div class="row">
               <div class="col-1-2">
-                <img src="softies.jpg" alt="" width="305" height="305" style="border-radius: 200px; margin-left: 80px; border-right: 10px solid white;">
+                <div class="card-services">
+                  <h3 class="card-title"><a><strong style="font-size: 50px;">500</strong>
+                      <p><i>+ menstrual kits distributed</i></p>
+                    </a></h3>
+                </div>
               </div>
               <div class="col-1-2">
-                <h3 style="color: white; font-size: 28px; text-align:center; border-left: 7px solid white;">We help break menstrual taboos by developing culturally applicable tools. Our curriculum is available in 4 languages, including a new translation for the Middle Eastern context.</h3>
-              </div>
-            </div>
-          </div>
-          <div class="section-footer">
-            <a href="contact.html" class="button" style="color: hotpink; background-color: white; border-radius:20px; margin-bottom: 20px;">Learn more about us</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="volunteer" class="section section-volunteer">
-        <div class="container">
-          <header class="section-header" style="font-size: 30px;">
-            <h2 class="section-title" style="color: black;">Get Involved and Make a Difference</h2>
-            <p class="section-tagline">Join us in our mission to improve menstrual health for millions.</p>
-          </header>
-          <div class="section-body">
-            <p>At Chuchu Softies, we believe in the power of collective action to create meaningful change. Our mission to improve menstrual health for millions across Africa and beyond is made possible by the dedication and passion of volunteers like you.</p>
-            <div class="why-volunteer">
-              <h3 style="color: hotpink;">Why Volunteer with Us?</h3>
-              <ul>
-                <li><strong>Impact:</strong> By volunteering with Chuchu Softies, you'll directly contribute to our efforts in distributing menstrual kits, empowering girls and women, and breaking menstrual taboos.</li>
-                <li><strong>Community:</strong> Join a vibrant community of like-minded individuals who are committed to making a positive impact on society.</li>
-                <li><strong>Personal Growth:</strong> Volunteering offers valuable opportunities for personal and professional development, from gaining new skills to building confidence and empathy.</li>
-                <li><strong>Fun and Fulfillment:</strong> Experience the joy and fulfillment that comes from knowing you're making a difference in the lives of others.</li>
-              </ul>
-            </div>
-            <div class="how-to-help">
-              <h3 style="color: hotpink;">How You Can Help</h3>
-              <ul>
-                <li><strong>Distribution:</strong> Assist in distributing menstrual kits to underserved communities, schools, and healthcare facilities.</li>
-                <li><strong>Awareness:</strong> Spread awareness about menstrual health and hygiene through educational workshops and campaigns.</li>
-                <li><strong>Fundraising:</strong> Organize fundraising events or campaigns to support our initiatives and reach more people in need.</li>
-                <li><strong>Advocacy:</strong> Advocate for policy changes and initiatives that promote menstrual equity and access to menstrual products.</li>
-              </ul>
-            </div>
-            <div class="cta">
-              <h3 style="color: hotpink;">Ready to Volunteer?</h3>
-              <p>Click the button below to learn more about volunteering opportunities with Chuchu Softies and join us in our mission to create a world where menstruation is no longer a barrier to education, health, and dignity.</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxcie1yjm26_LjYtsxwZHYYA--50PeoqsT8NpKWbPpPuNXEw/viewform" class="button" style="margin-left: 350px;">Volunteer Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-
-      <!– Testimonials section –>
-      <section id="testimonial" class="section section-testimonial">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" style="color: black;">Top Users Reviews</h2>
-            <p class="section-tagline">We are more than a just a business entity</p>
-          </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>The products' flexibility is exceptional; I'll be placing more orders without a doubt.
-                      <cite>Evonne S.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>Thank you so much for your empowerment program. Chuchu softies is awesome!
-                      <cite>Dorrie S.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>I love your system. Definitely worth the investment. I’d be lost without Chuchu Softies.
-                      <cite>Sven H.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      
-
-      <!– Footer –>
-      <footer class="footer" data-section-theme="dark">
-        <div  class="container">
-          <div class="row">
-            <div class="col-1-2">
-              <div class="img">
-              <img src="Chuchu.png" alt="Chuchu logo">
-              </div>
-              <address class="footer-address">
-                41. Victoria Ironsi Crescent,<br>
-                4th Avenue,<br>
-                Gwarimpa,
-                Abuja FCT,
-                Nigeria
-              </address>
-            </div>
-            <div class="col-1-2">
-              <div class="social-icons">
-                <div class="lik">
-                <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
-                  <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
-                </a>
+                <div class="card-services">
+                  <h3 class="card-title"><a><strong style="font-size: 50px;">50</strong>
+                      <p><i>% reduction of waste generated</i></p>
+                    </a></h3>
                 </div>
-                <div class="gmail">
-                <a href="mailto:info@chuchusofties.com" class="social-icon">
-                  <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
-                </a>
+              </div>
+              <div class="col-1-2">
+                <div class="card-services">
+                  <h3 class="card-title"><a><strong style="font-size: 50px;">750</strong>
+                      <p><i> + girls and women empowered</i></p>
+                    </a></h3>
                 </div>
-                  <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
-                    <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
-                  </a>
               </div>
-              <div class="links" style="display: flex; margin-top:-100px;">
-              <div class="sitemap">
-                <h4>Site Map</h4>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="blog.html">Blogs</a></li>
-                  <li><a href="impacts.html">Impact</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-              </div>
-              </div>
-              <div class="back">
-                <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+              <div class="col-1-2">
+                <div class="card-services">
+                  <h3 class="card-title"><a><strong style="font-size: 50px;">15</strong>
+                      <p><i>partnership acquired over the years</i></p>
+                    </a></h3>
+                </div>
               </div>
             </div>
           </div>
-          <hr>
-          <div class="row">
-            <div class="col-1-2">
-              <p class="footer-copyright">© 2024 Chuchu, made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
-            </div>
-            <div class="col-1-2">
-              <ul class="footer-nav nav">
-                <li class="footer-nav-item nav-item">
-                  <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Terms of use</a>
+        </div>
+      </section>
+
+      <!– Latest news section –>
+        <section id="latest_news" class="section section-latest-news">
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-title" style="color: black;">We’ve become the world’s leading social enterprise
+                manufacturing ultra-modern reusable sanitary pads</h2>
+            </header>
+            <div class="section-body">
+              <ul class="row">
+                <li class="col-1-3">
+                  <article class="card-blog">
+                    <div>
+                      <img src="chuc.jpg" alt="" width="305" height="305">
+                    </div>
+                    <h2>We help break menstrual taboos by developing culturally applicable tools.</h2>
+                  </article>
                 </li>
-                <li class="footer-nav-item nav-item">
-                  <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Privacy Policy</a>
+                <li class="col-1-3">
+                  <article class="card-blog">
+                    <div>
+                      <img src="people.webp" alt="" width="305" height="305">
+                    </div>
+                    <h2 style="color: hotpink;">Our reusable menstrual kits have reached over 500 women and girls.</h2>
+                  </article>
                 </li>
-                <li class="footer-nav-item nav-item">
-                  <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Cookie Policy</a>
+                <li class="col-1-3">
+                  <article class="card-blog">
+                    <div>
+                      <img src="women.png" alt="" width="305" height="305">
+                    </div>
+                    <h2>Building menstrual health knowledge.</h2>
+                  </article>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-      </footer>
-      <script src="script.js"></script>
-      <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>    
-    </body>
-  </html>  
+        </section>
+
+        <section id="about" class="section section-about-us">
+          <div class="container"
+            style="background-color: hotpink; padding: 50px, 50px, 50px, 50px; border-radius: 20px;">
+            <div class="section-body">
+              <div class="row">
+                <div class="col-1-2">
+                  <img src="softies.jpg" alt="" width="305" height="305"
+                    style="border-radius: 200px; margin-left: 80px; border-right: 10px solid white;">
+                </div>
+                <div class="col-1-2">
+                  <h3 style="color: white; font-size: 28px; text-align:center; border-left: 7px solid white;">We help
+                    break menstrual taboos by developing culturally applicable tools. Our curriculum is available in 4
+                    languages, including a new translation for the Middle Eastern context.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer">
+              <a href="contact.html" class="button"
+                style="color: hotpink; background-color: white; border-radius:20px; margin-bottom: 20px;">Learn more
+                about us</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="volunteer" class="section section-volunteer">
+          <div class="container">
+            <header class="section-header" style="font-size: 30px;">
+              <h2 class="section-title" style="color: black;">Get Involved and Make a Difference</h2>
+              <p class="section-tagline">Join us in our mission to improve menstrual health for millions.</p>
+            </header>
+            <div class="section-body">
+              <p>At Chuchu Softies, we believe in the power of collective action to create meaningful change. Our
+                mission to improve menstrual health for millions across Africa and beyond is made possible by the
+                dedication and passion of volunteers like you.</p>
+              <div class="why-volunteer">
+                <h3 style="color: hotpink;">Why Volunteer with Us?</h3>
+                <ul>
+                  <li><strong>Impact:</strong> By volunteering with Chuchu Softies, you'll directly contribute to our
+                    efforts in distributing menstrual kits, empowering girls and women, and breaking menstrual taboos.
+                  </li>
+                  <li><strong>Community:</strong> Join a vibrant community of like-minded individuals who are committed
+                    to making a positive impact on society.</li>
+                  <li><strong>Personal Growth:</strong> Volunteering offers valuable opportunities for personal and
+                    professional development, from gaining new skills to building confidence and empathy.</li>
+                  <li><strong>Fun and Fulfillment:</strong> Experience the joy and fulfillment that comes from knowing
+                    you're making a difference in the lives of others.</li>
+                </ul>
+              </div>
+              <div class="how-to-help">
+                <h3 style="color: hotpink;">How You Can Help</h3>
+                <ul>
+                  <li><strong>Distribution:</strong> Assist in distributing menstrual kits to underserved communities,
+                    schools, and healthcare facilities.</li>
+                  <li><strong>Awareness:</strong> Spread awareness about menstrual health and hygiene through
+                    educational workshops and campaigns.</li>
+                  <li><strong>Fundraising:</strong> Organize fundraising events or campaigns to support our initiatives
+                    and reach more people in need.</li>
+                  <li><strong>Advocacy:</strong> Advocate for policy changes and initiatives that promote menstrual
+                    equity and access to menstrual products.</li>
+                </ul>
+              </div>
+              <div class="cta">
+                <h3 style="color: hotpink;">Ready to Volunteer?</h3>
+                <p>Click the button below to learn more about volunteering opportunities with Chuchu Softies and join us
+                  in our mission to create a world where menstruation is no longer a barrier to education, health, and
+                  dignity.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxcie1yjm26_LjYtsxwZHYYA--50PeoqsT8NpKWbPpPuNXEw/viewform"
+                  class="button" style="margin-left: 350px;">Volunteer Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!– Testimonials section –>
+          <section id="testimonial" class="section section-testimonial">
+            <div class="container">
+              <header class="section-header">
+                <h2 class="section-title" style="color: black;">Top Users Reviews</h2>
+                <p class="section-tagline">We are more than a just a business entity</p>
+              </header>
+              <div class="section-body">
+                <ul class="row">
+                  <li class="col-1-3">
+                    <article class="card-testimonial">
+                      <img src="pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
+                      <blockquote class="card-quote">
+                        <p>The products' flexibility is exceptional; I'll be placing more orders without a doubt.
+                          <cite>Evonne S.</cite>
+                        </p>
+                      </blockquote>
+                    </article>
+                  </li>
+                  <li class="col-1-3">
+                    <article class="card-testimonial">
+                      <img src="pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
+                      <blockquote class="card-quote">
+                        <p>Thank you so much for your empowerment program. Chuchu softies is awesome!
+                          <cite>Dorrie S.</cite>
+                        </p>
+                      </blockquote>
+                    </article>
+                  </li>
+                  <li class="col-1-3">
+                    <article class="card-testimonial">
+                      <img src="pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
+                      <blockquote class="card-quote">
+                        <p>I love your system. Definitely worth the investment. I’d be lost without Chuchu Softies.
+                          <cite>Sven H.</cite>
+                        </p>
+                      </blockquote>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+
+          <!– Footer –>
+            <!– Footer –>
+              <footer class="footer" data-section-theme="dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1-2">
+                      <div class="img">
+                        <img src="Chuchu.png" alt="Chuchu logo">
+                      </div>
+                      <address class="footer-address">
+                        41. Victoria Ironsi Crescent,<br>
+                        4th Avenue,<br>
+                        Gwarimpa,
+                        Abuja FCT,
+                        Nigeria
+                      </address>
+                    </div>
+
+                    <div class="links" style="display: flex; margin-top:-100px;">
+                      <div class="sitemap">
+                        <h4>Site Map</h4>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="impacts.html">Impact</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-1-2">
+                    <p class="footer-copyright">© 2024 Chuchu <br>
+                      Made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.
+                    </p>
+                  </div>
+                  <div class="col-1-2">
+                    <ul class="footer-nav nav">
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Terms of use</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Privacy Policy</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Cookie Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              </footer>
+              <script src="script.js"></script>
+              <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+              <script
+                src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
+</body>
+
+</html>

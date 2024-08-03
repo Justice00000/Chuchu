@@ -17,15 +17,21 @@
     color: hotpink;
   }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
-    pointer-events: none;
+  .section-hero img {
+    background: linear-gradient(to bottom, rgba(131, 3, 78, 0.071) 0%, rgba(115, 5, 69, 0.411) 100%);
     /* Ensure the overlay doesn't intercept click events */
+  }
+
+  @media (max-width: 767px) {
+    .video-wrapper {
+      width: 90%;
+      margin-left: 20px;
+    }
+
+    .text-wrapper {
+      font-size: 10px !important;
+    }
+
   }
 </style>
 
@@ -68,14 +74,14 @@
       <main>
         <!– Hero section –>
           <section class="section-hero hero-home">
-            <img src="image.jpeg" alt="" width="100%" height="500px">
+            <img src="Nbol (1).jpg" alt="" width="100%" height="500px">
           </section>
           <div class="section-body">
             <div class="vid">
               <div class="row">
                 <div class="col-1-2">
                   <div class="video-wrapper">
-                    <img src="nbl.jpeg" alt="" width="560" height="315">
+                    <img src="Nbol (3).jpg" alt="" width="560" height="315">
                   </div>
                 </div>
                 <div class="col-1-2">
@@ -170,59 +176,42 @@
                         Nigeria
                       </address>
                     </div>
-                    <div class="col-1-2">
-                      <div class="social-icons">
-                        <div class="lik">
-                          <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
-                            <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
-                          </a>
-                        </div>
-                        <div class="gmail">
-                          <a href="mailto:info@chuchusofties.com" class="social-icon">
-                            <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
-                          </a>
-                        </div>
-                        <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
-                          <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
-                        </a>
-                      </div>
-                      <div class="links" style="display: flex; margin-top:-100px;">
-                        <div class="sitemap">
-                          <h4>Site Map</h4>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="blog.html">Blogs</a></li>
-                          <li><a href="impacts.html">Impact</a></li>
-                          <li><a href="contact.html">Contact Us</a></li>
-                        </div>
-                      </div>
-                      <div class="back">
-                        <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+
+                    <div class="links" style="display: flex; margin-top:-100px;">
+                      <div class="sitemap">
+                        <h4>Site Map</h4>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="impacts.html">Impact</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                       </div>
                     </div>
                   </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-1-2">
-                      <p class="footer-copyright">© 2024 Chuchu, made with <strong
-                          style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
-                    </div>
-                    <div class="col-1-2">
-                      <ul class="footer-nav nav">
-                        <li class="footer-nav-item nav-item">
-                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
-                            class="footer-nav-link">Terms of use</a>
-                        </li>
-                        <li class="footer-nav-item nav-item">
-                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
-                            class="footer-nav-link">Privacy Policy</a>
-                        </li>
-                        <li class="footer-nav-item nav-item">
-                          <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
-                            class="footer-nav-link">Cookie Policy</a>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-1-2">
+                    <p class="footer-copyright">© 2024 Chuchu <br>
+                      Made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.
+                    </p>
                   </div>
+                  <div class="col-1-2">
+                    <ul class="footer-nav nav">
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Terms of use</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Privacy Policy</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Cookie Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 </div>
               </footer>
               <script src="script.js"></script>

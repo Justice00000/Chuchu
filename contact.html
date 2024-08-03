@@ -1,428 +1,466 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Chuchu Softies</title>
-    <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
-    <!-- Google Analytics Tracking Code -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WK682P3LRW');
-</script>
-    <meta name="description" content="Description of the page less than 150 characters">
-    <link rel="icon" type="/png" href="/Chuchu.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='styles.css'>
-  </head>
-  <style>
-    .section-body {
-      font-size: 20px;
-    }
-    .text {
-      margin-top: 50px;
-      font-size: 25px;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
-      pointer-events: none; /* Ensure the overlay doesn't intercept click events */
-    }
-    .team-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-    }
-    .team-member {
-      width: 370px;
-      text-align: center;
-      padding: 20px;
-      background-color: hotpink;
-      border-radius: 50px;
-      transition:  0.3s ease;
-    }
-    .team-member img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      overflow: hidden;
-      transition: transform 1.0s ease-in-out; 
-    }
-    .team-member:hover  img {
-      transform: scale(1.1);
-      transition: var(--transition-duration) var(--transition-cubic-bezier);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chuchu Softies</title>
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
+  <!-- Google Analytics Tracking Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WK682P3LRW');
+  </script>
+  <meta name="description" content="Description of the page less than 150 characters">
+  <link rel="icon" type="/png" href="/Chuchu.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<style>
+  .section-body {
+    font-size: 20px;
   }
-    .team-member h3 {
-      margin: 0;
-      font-size: 18px;
-      color: white;
-    }
-    .team-member p {
-      margin: 0;
-      font-size: 14px;
-      color: white;
-    } 
+
+  .text {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
+    pointer-events: none;
+    /* Ensure the overlay doesn't intercept click events */
+  }
+
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .team-member {
+    width: 370px;
+    text-align: center;
+    padding: 20px;
+    background-color: hotpink;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+
+  .team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: transform 1.0s ease-in-out;
+  }
+
+  .team-member:hover img {
+    transform: scale(1.1);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  }
+
+  .team-member h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  .team-member p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+  }
+
+  .section-inner {
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
     .section-inner {
-      text-align: center;
+      margin-bottom: -150px;
     }
-    @media (max-width: 767px) {
-      .section-inner{
-        margin-bottom: -150px;
-      }
-      .section-inner p {
-        font-size: 30px;
-        font-weight: 900 !important;
-        width: 100%;
-        margin-left: 10px;
-        align-items: center !important;
-      }
-      .section-inner .button {
-        font-size: 20px;
-        width: 70%;
-        margin-left: 40px !important;
-      }
-      .section-hero .section-title {
-        width: 100%;
-        font-size: 30px !important;
-      }
-      .section-works .row {
-        flex-direction: column !important;
-      }
-      .section-works p {
-        align-items: center !important;
-        width: 100% !important;
-        margin-left: 250px !important;
-        margin-top: -80px;
-        font-weight: 900;
-      }
+
+    .section-inner p {
+      font-size: 30px;
+      font-weight: 900 !important;
+      width: 100%;
+      margin-left: 10px;
+      align-items: center !important;
     }
-  </style>
-  <body>
-    <!– Header –>
+
+    .section-inner .button {
+      font-size: 20px;
+      width: 70%;
+      margin-left: 40px !important;
+    }
+
+    .section-hero .section-title {
+      width: 100%;
+      font-size: 30px !important;
+    }
+
+    .section-works .row {
+      flex-direction: column !important;
+    }
+
+    .section-works p {
+      align-items: center !important;
+      width: 100% !important;
+      margin-left: 250px !important;
+      margin-top: -80px;
+      font-weight: 900;
+    }
+  }
+</style>
+
+<body>
+  <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
-            <div class="header-container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="Chuchu.png" alt="Chuchu logo">
-          </a>
+        <div class="header-container">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="Chuchu.png" alt="Chuchu logo">
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a href="impacts.html" class="nav-link">Impacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="tracker.html" class="nav-link">Period-Tracker</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navbar-menu">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="impacts.html" class="nav-link">Impacts</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="tracker.html" class="nav-link">Period-Tracker</a>
-            </li>
-          </ul>
-        </nav>        
       </div>
-            </div>
     </header>
     <div class="black-line"></div>
 
     <!– Main –>
-    <main>
-      <!– Hero section –>
-      <section class="section-hero hero-homepage" data-section-theme="dark">
-        <div class="container">
-          <div class="section-body">
-            <div class="cont">
-              <div class="overlay"></div>
-            <section class="section-inner" style="align-items: center; margin-bottom: -150px;">
-              <h2 class="section-title" style="color: white;">Contact us now</h2>
-              <p style="color: white;">We would like to hear from you</p>
-              </section>
-          </div>
-          </div>
-        </div>
-        </section>
+      <main>
+        <!– Hero section –>
+          <section class="section-hero hero-homepage" data-section-theme="dark">
+            <div class="container">
+              <div class="section-body">
+                <div class="cont">
+                  <div class="overlay"></div>
+                  <section class="section-inner" style="align-items: center; margin-bottom: -150px;">
+                    <h2 class="section-title" style="color: white;">Contact us now</h2>
+                    <p style="color: white;">We would like to hear from you</p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <!– Contact section –>
-      <section id="contact" class="section section-contact" style="border-bottom: 1px solid hotpink;">
-        <div class="container">
-          <div class="section-body">
-            <h4>Do you want to find out more about our partnerships, pricing, shipping options or distribution opportunities? Perhaps requesting an interview or looking for a training?
+          <!– Contact section –>
+            <section id="contact" class="section section-contact" style="border-bottom: 1px solid hotpink;">
+              <div class="container">
+                <div class="section-body">
+                  <h4>Do you want to find out more about our partnerships, pricing, shipping options or distribution
+                    opportunities? Perhaps requesting an interview or looking for a training?
 
-                Please submit an inquiry and we’ll get back to you as soon as possible</h4>
-          </div>
-          <div class="section-footer">
-            <a href="https://forms.gle/5A3W1jZbBaxvdEQQ9" class="button">Get in touch</a>
-          </div>
-        </div>
-      </section>
+                    Please submit an inquiry and we’ll get back to you as soon as possible</h4>
+                </div>
+                <div class="section-footer">
+                  <a href="https://forms.gle/5A3W1jZbBaxvdEQQ9" class="button">Get in touch</a>
+                </div>
+              </div>
+            </section>
 
-      <section id="contact" class="section section-contact" style="border-bottom: 1px solid hotpink;">
-        <div class="container">
-          <div class="section-body">
-            <h4 style="text-align: center; font-size: 25px;">For Orders and Purchase<br>
-              Click the link below</h4>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform" class="button" style="margin-left: 400px;">Shop Now</a>
-          </div>
-        </div>
-      </section>
+            <section id="contact" class="section section-contact" style="border-bottom: 1px solid hotpink;">
+              <div class="container">
+                <div class="section-body">
+                  <h4 style="text-align: center; font-size: 25px;">For Orders and Purchase<br>
+                    Click the link below</h4>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1kfsMf1YD6we1mxfHTNyN5TZMEsHU-lBGJhDc7_2OCPMMEA/viewform"
+                    class="button" style="margin-left: 400px;">Shop Now</a>
+                </div>
+              </div>
+            </section>
 
-      <section id="partnership" class="section section-partnership" style="border-bottom: 1px solid hotpink;">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" style="color: black !important;">Join Us in Making a Difference</h2>
-            <p class="section-tagline">Partner with Chuchu Softies</p>
-          </header>
-          <div class="section-body">
-            <p>
-              At Chuchu Softies, we believe that partnerships are key to achieving our mission of improving menstrual health for millions of people across Africa and beyond. We invite organizations, businesses, and individuals who share our passion for social impact to join us in this journey.
-            </p>
-            <h3 style="color: hotpink;">Why Partner with Chuchu Softies?</h3>
-            <ol>
-              <li><strong>Impact:</strong> Partnering with us means directly contributing to initiatives that distribute menstrual kits, empower girls and women, and break menstrual taboos, leading to tangible and lasting impact in communities.</li>
-              <li><strong>Visibility:</strong> Gain exposure and visibility by aligning your brand with a reputable and impactful social enterprise. Partnering with Chuchu Softies offers opportunities for co-branding and acknowledgment across our communication channels.</li>
-              <li><strong>Network:</strong> Connect with a diverse network of like-minded individuals and organizations dedicated to social change. Our partnerships foster collaboration, knowledge sharing, and collective action.</li>
-              <li><strong>CSR Opportunities:</strong> Fulfill your corporate social responsibility (CSR) objectives by supporting initiatives that address pressing social issues and contribute to sustainable development goals.</li>
-            </ol>
-            <h3 style="color: hotpink;">How You Can Partner with Us:</h3>
-            <ul>
-              <li><strong>Financial Support:</strong> Provide financial support through donations, grants, or sponsorship of specific programs or projects.</li>
-              <li><strong>In-Kind Contributions:</strong> Donate menstrual products, hygiene supplies, or other resources that support our initiatives.</li>
-              <li><strong>Expertise and Resources:</strong> Offer expertise, resources, or services that complement our work, such as marketing support, logistical assistance, or technical guidance.</li>
-              <li><strong>Collaborative Projects:</strong> Collaborate on joint projects, campaigns, or events that amplify our impact and reach.</li>
-            </ul>
-            <h3 style="color: hotpink;">Ready to Partner with Chuchu Softies?</h3> 
-            <p>Take the first step towards making a meaningful difference in menstrual health and hygiene. Click below to explore partnership opportunities or contact us to discuss how we can work together.</p>
-            <a href="#" class="button" style="margin-left: 400px;">Partner Now</a>
-          </div>
-        </div>
-      </section>
-      
+            <section id="partnership" class="section section-partnership" style="border-bottom: 1px solid hotpink;">
+              <div class="container">
+                <header class="section-header">
+                  <h2 class="section-title" style="color: black !important;">Join Us in Making a Difference</h2>
+                  <p class="section-tagline">Partner with Chuchu Softies</p>
+                </header>
+                <div class="section-body">
+                  <p>
+                    At Chuchu Softies, we believe that partnerships are key to achieving our mission of improving
+                    menstrual health for millions of people across Africa and beyond. We invite organizations,
+                    businesses, and individuals who share our passion for social impact to join us in this journey.
+                  </p>
+                  <h3 style="color: hotpink;">Why Partner with Chuchu Softies?</h3>
+                  <ol>
+                    <li><strong>Impact:</strong> Partnering with us means directly contributing to initiatives that
+                      distribute menstrual kits, empower girls and women, and break menstrual taboos, leading to
+                      tangible and lasting impact in communities.</li>
+                    <li><strong>Visibility:</strong> Gain exposure and visibility by aligning your brand with a
+                      reputable and impactful social enterprise. Partnering with Chuchu Softies offers opportunities for
+                      co-branding and acknowledgment across our communication channels.</li>
+                    <li><strong>Network:</strong> Connect with a diverse network of like-minded individuals and
+                      organizations dedicated to social change. Our partnerships foster collaboration, knowledge
+                      sharing, and collective action.</li>
+                    <li><strong>CSR Opportunities:</strong> Fulfill your corporate social responsibility (CSR)
+                      objectives by supporting initiatives that address pressing social issues and contribute to
+                      sustainable development goals.</li>
+                  </ol>
+                  <h3 style="color: hotpink;">How You Can Partner with Us:</h3>
+                  <ul>
+                    <li><strong>Financial Support:</strong> Provide financial support through donations, grants, or
+                      sponsorship of specific programs or projects.</li>
+                    <li><strong>In-Kind Contributions:</strong> Donate menstrual products, hygiene supplies, or other
+                      resources that support our initiatives.</li>
+                    <li><strong>Expertise and Resources:</strong> Offer expertise, resources, or services that
+                      complement our work, such as marketing support, logistical assistance, or technical guidance.</li>
+                    <li><strong>Collaborative Projects:</strong> Collaborate on joint projects, campaigns, or events
+                      that amplify our impact and reach.</li>
+                  </ul>
+                  <h3 style="color: hotpink;">Ready to Partner with Chuchu Softies?</h3>
+                  <p>Take the first step towards making a meaningful difference in menstrual health and hygiene. Click
+                    below to explore partnership opportunities or contact us to discuss how we can work together.</p>
+                  <a href="#" class="button" style="margin-left: 400px;">Partner Now</a>
+                </div>
+              </div>
+            </section>
 
-      <section id="works" class="section section-works" data-section-theme="">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title" style="color: black !important;">Come say hello at</h2>
-            <h2 class="section-tagline">Our head offfice</h2>
-          </header>
-          <div class="section-body">
-            <div class="col">
-            <ul class="row">
-              <li class="col-1-2">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.4335148260357!2d7.4131066750199555!3d9.115257890949554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf8aba35575b%3A0x913834c7a732ab1!2s41%20Victoria%20Ironsi%20Cres%2C%20Gwarinpa%2C%20900108%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1713778094509!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <section id="works" class="section section-works" data-section-theme="">
+              <div class="container">
+                <header class="section-header">
+                  <h2 class="section-title" style="color: black !important;">Come say hello at</h2>
+                  <h2 class="section-tagline">Our head offfice</h2>
+                </header>
+                <div class="section-body">
+                  <div class="col">
+                    <ul class="row">
+                      <li class="col-1-2">
+                        <article class="card-work">
+                          <div class="card-outer">
+                            <div class="card-image">
+                              <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.4335148260357!2d7.4131066750199555!3d9.115257890949554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf8aba35575b%3A0x913834c7a732ab1!2s41%20Victoria%20Ironsi%20Cres%2C%20Gwarinpa%2C%20900108%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1713778094509!5m2!1sen!2sng"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="col-1-2">
+                        <article class="card-work">
+                          <div class="card-outer">
+                            <div class="text">
+                              <h3>41, Victoria Ironsi Crescent,<br />
+                                Gwarimpa, 4th Avenue,<br />
+                                Abuja, Nigeria</h3>
+                              <p>+2349082939315<br />
+                                +2347030322215</p>
+                              <h4>info@chuchusoftties.com<br />
+                                chuchu_softies @instagram</h4>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="teams" class="section section-team"
+              style="text-align: center; border-bottom: 1px solid hotpink;">
+              <h2 class="section-title" style="color: black !important;">Introducing Our Dedicated Team</h2>
+              <p class="section-tagline">Meet the Team</p>
+              <div class="team-container">
+                <div class="team-member">
+                  <img src="Shubby.jpeg" alt="Team Member 1">
+                  <h3>Faith Chuby Labija</h3>
+                  <p>CEO & FOUNDER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/faith-labija/"><img src="linkedin.svg" alt="LinkedIn"
+                        style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Blessing.jpg" alt="Team Member 2">
+                  <h3>Blessing Enemona Ezugwu</h3>
+                  <p>CHIEF OF OPERATIONS</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/blessing-ezugwu-6991a7189/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+
+                <div class="team-member">
+                  <img src="Angelina.jpg" alt="Team Member 3">
+                  <h3>Angelina Addo</h3>
+                  <p>IN-HOUSE CONSULTANT</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/angelina-asenso-addo-mba-8b246416b/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Anne.jpeg" alt="Team Member 5">
+                  <h3>Anne Achieng Alwala</h3>
+                  <p>OUTREACH OPERATIONS MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/anne-alwala/"><img src="linkedin.svg" alt="LinkedIn"
+                        style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Olivier.jpg" alt="Intern 2">
+                  <h3>Oliver Mushimiyemungu</h3>
+                  <p>SOCIAL MEDIA MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/oliver-mushimiyemungu-238b3022b/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+              </div>
+              <h1 style="font-size: 40px;">Our Interns</h1>
+              <div class="team-container">
+                <div class="team-member">
+                  <img src="Justice.jpeg" alt="Intern 1">
+                  <h3>Justice Chukwuonye</h3>
+                  <p>WEB DEVELOPER AND MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/justice-chukwuonye-a93372279/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Eric.jpg" alt="Intern 2">
+                  <h3>Eric Ayamba</h3>
+                  <p>ACCOUNTING MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/ericayamba/"><img src="linkedin.svg" alt="LinkedIn"
+                        style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Christian.jpg" alt="Intern 2">
+                  <h3>Christian Narh Fiergbor</h3>
+                  <p>PARTNERSHIP MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/christian-narh-fiergbor/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Jessica.jpg" alt="Intern 2">
+                  <h3>Jessica Ornella Nett</h3>
+                  <p>PARTNERSHIP MANAGER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="David.jpg" alt="Intern 2" style="width: 280px;">
+                  <h3>Mazimpaka King David</h3>
+                  <p>GRAPHIC DESIGNER AND VIDEOGRAPHER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/mazimpaka-king-david/"><img src="linkedin.svg" alt="LinkedIn"
+                        style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <img src="Eyram.jpg" alt="Intern 2">
+                  <h3>Hillary Eyram Anyomi</h3>
+                  <p>GRANT WRITER AND FUNDRAISER</p>
+                  <div class="contact-icons" style="margin-top: -100px;">
+                    <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg"
+                        alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
+                  </div>
+                </div>
+            </section>
+            <!– Footer –>
+              <footer class="footer" data-section-theme="dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1-2">
+                      <div class="img">
+                        <img src="Chuchu.png" alt="Chuchu logo">
+                      </div>
+                      <address class="footer-address">
+                        41. Victoria Ironsi Crescent,<br>
+                        4th Avenue,<br>
+                        Gwarimpa,
+                        Abuja FCT,
+                        Nigeria
+                      </address>
+                    </div>
+
+                    <div class="links" style="display: flex; margin-top:-100px;">
+                      <div class="sitemap">
+                        <h4>Site Map</h4>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="impacts.html">Impact</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      </div>
                     </div>
                   </div>
-                </article>
-              </li>
-              <li class="col-1-2">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="text">
-                      <h3>41, Victoria Ironsi Crescent,<br/>
-                         Gwarimpa, 4th Avenue,<br/> 
-                         Abuja, Nigeria</h3>
-                      <p>+2349082939315<br/>
-                        +2347030322215</p>
-                      <h4>info@chuchusoftties.com<br/> 
-                        chuchu_softies @instagram</h4>
-                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-1-2">
+                    <p class="footer-copyright">© 2024 Chuchu <br>
+                      Made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.
+                    </p>
                   </div>
-                </article>
-              </li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="teams" class="section section-team" style="text-align: center; border-bottom: 1px solid hotpink;">
-        <h2 class="section-title" style="color: black !important;">Introducing Our Dedicated Team</h2>
-        <p class="section-tagline">Meet the Team</p>
-        <div class="team-container">
-          <div class="team-member">
-            <img src="Shubby.jpeg" alt="Team Member 1">
-            <h3>Faith Chuby Labija</h3>
-            <p>CEO & FOUNDER</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-                <a href="https://www.linkedin.com/in/faith-labija/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-            </div>
-        </div>
-        <div class="team-member">
-            <img src="Blessing.jpg" alt="Team Member 2">
-            <h3>Blessing Enemona Ezugwu</h3>
-            <p>CHIEF OF OPERATIONS</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href="https://www.linkedin.com/in/blessing-ezugwu-6991a7189/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-            </div>
-        </div>
-        
-          <div class="team-member">
-            <img src="Angelina.jpg" alt="Team Member 3">
-            <h3>Angelina Addo</h3>
-            <p>IN-HOUSE CONSULTANT</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href="https://www.linkedin.com/in/angelina-asenso-addo-mba-8b246416b/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-            </div>
-          </div>
-          <div class="team-member">
-            <img src="Anne.jpeg" alt="Team Member 5">
-            <h3>Anne Achieng Alwala</h3>
-            <p>OUTREACH OPERATIONS MANAGER</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href="https://www.linkedin.com/in/anne-alwala/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-          </div>
-          </div>
-          <div class="team-member">
-            <img src="Olivier.jpg" alt="Intern 2">
-            <h3>Oliver Mushimiyemungu</h3>
-            <p>SOCIAL MEDIA MANAGER</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href="https://www.linkedin.com/in/oliver-mushimiyemungu-238b3022b/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-          </div>
-        </div>
-        </div>
-        <h1 style="font-size: 40px;">Our Interns</h1>
-    <div class="team-container">
-        <div class="team-member">
-            <img src="Justice.jpeg" alt="Intern 1">
-            <h3>Justice Chukwuonye</h3>
-            <p>WEB DEVELOPER AND MANAGER</p>
-            <div class="contact-icons" style="margin-top: -100px;">
-              <a href="https://www.linkedin.com/in/justice-chukwuonye-a93372279/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="Eric.jpg" alt="Intern 2">
-          <h3>Eric Ayamba</h3>
-          <p>ACCOUNTING MANAGER</p>
-          <div class="contact-icons" style="margin-top: -100px;">
-            <a href="https://www.linkedin.com/in/ericayamba/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-        </div>
-      </div>
-      <div class="team-member">
-        <img src="Christian.jpg" alt="Intern 2">
-        <h3>Christian Narh Fiergbor</h3>
-        <p>PARTNERSHIP MANAGER</p>
-        <div class="contact-icons" style="margin-top: -100px;">
-          <a href="https://www.linkedin.com/in/christian-narh-fiergbor/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-      </div>
-    </div>
-    <div class="team-member">
-      <img src="Jessica.jpg" alt="Intern 2">
-      <h3>Jessica Ornella Nett</h3>
-      <p>PARTNERSHIP MANAGER</p>
-      <div class="contact-icons" style="margin-top: -100px;">
-        <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="David.jpg" alt="Intern 2" style="width: 280px;">
-    <h3>Mazimpaka King David</h3>
-    <p>GRAPHIC DESIGNER AND VIDEOGRAPHER</p>
-    <div class="contact-icons" style="margin-top: -100px;">
-      <a href="https://www.linkedin.com/in/mazimpaka-king-david/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-  </div>
-</div> 
-<div class="team-member">
-  <img src="Eyram.jpg" alt="Intern 2">
-  <h3>Hillary Eyram Anyomi</h3>
-  <p>GRANT WRITER AND FUNDRAISER</p>
-  <div class="contact-icons" style="margin-top: -100px;">
-    <a href="https://www.linkedin.com/in/jessica-ornella-nett-794b64182/"><img src="linkedin.svg" alt="LinkedIn" style="width: 40px; margin-bottom:-100px;"></a>
-</div>
-</div>     
-</section>
-<!– Footer –>
-<footer class="footer" data-section-theme="dark">
-  <div  class="container">
-    <div class="row">
-      <div class="col-1-2">
-        <div class="img">
-        <img src="Chuchu.png" alt="Chuchu logo">
-        </div>
-        <address class="footer-address">
-          41. Victoria Ironsi Crescent,<br>
-          4th Avenue,<br>
-          Gwarimpa,
-          Abuja FCT,
-          Nigeria
-        </address>
-      </div>
-      <div class="col-1-2">
-        <div class="social-icons">
-          <div class="lik">
-          <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
-            <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
-          </a>
-          </div>
-          <div class="gmail">
-          <a href="mailto:info@chuchusofties.com" class="social-icon">
-            <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
-          </a>
-          </div>
-            <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
-              <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
-            </a>
-        </div>
-        <div class="links" style="display: flex; margin-top:-100px;">
-        <div class="sitemap">
-          <h4>Site Map</h4>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="impacts.html">Impact</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </div>
-        </div>
-        <div class="back">
-          <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-1-2">
-        <p class="footer-copyright">© 2024 Chuchu, made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
-      </div>
-      <div class="col-1-2">
-        <ul class="footer-nav nav">
-          <li class="footer-nav-item nav-item">
-            <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Terms of use</a>
-          </li>
-          <li class="footer-nav-item nav-item">
-            <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Privacy Policy</a>
-          </li>
-          <li class="footer-nav-item nav-item">
-            <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Cookie Policy</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>   
+                  <div class="col-1-2">
+                    <ul class="footer-nav nav">
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Terms of use</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Privacy Policy</a>
+                      </li>
+                      <li class="footer-nav-item nav-item">
+                        <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                          class="footer-nav-link">Cookie Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              </footer>
+              <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Chuchu Softies</title>
-    <!-- Google Analytics Tracking Code -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WK682P3LRW');
-</script>
-    <meta name="description" content="Description of the page less than 150 characters">
-    <link rel="icon" type="image/png" href="images/favicon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='styles.css'>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chuchu Softies</title>
+  <!-- Google Analytics Tracking Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK682P3LRW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WK682P3LRW');
+  </script>
+  <meta name="description" content="Description of the page less than 150 characters">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles.css'>
+</head>
 <style>
   .overlay {
     position: absolute;
@@ -27,107 +28,108 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(227, 193, 213, 0.071) 0%, rgba(61, 28, 47, 0.411) 100%);
-    pointer-events: none; /* Ensure the overlay doesn't intercept click events */
+    pointer-events: none;
+    /* Ensure the overlay doesn't intercept click events */
   }
 
   .section-inner {
     flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-  margin-top: 200px;
-  z-index: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin-top: 200px;
+    z-index: 1;
   }
-       .tracker-container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 50px hotpink;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-            background-color: hotpink;
-        }
-        
-        label {
-            display: block;
-            font-weight: bold;
-        }
-        
-        input[type="date"],
-        input[type="number"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid hotpink;
-            border-radius: 5px solid hotpink;
-            box-sizing: border-box;
-        }
-        
-        textarea {
-            resize: vertical;
-        }
-        
-        button {
-            display: block;
-            width: 50%;
-            padding: 10px;
-            background-color: white;
-            color: hotpink;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 130px;
-            font-weight: 700;
-        }
-        
-        button:hover {
-            background-color: hotpink;
-            color: white;
-        }
-        
-      </style>
 
-  <body>
-    <!– Header –>
+  .tracker-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px hotpink;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    background-color: hotpink;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input[type="date"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hotpink;
+    border-radius: 5px solid hotpink;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    color: hotpink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 130px;
+    font-weight: 700;
+  }
+
+  button:hover {
+    background-color: hotpink;
+    color: white;
+  }
+</style>
+
+<body>
+  <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
-            <div class="header-container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="Chuchu.png" alt="Chuchu logo">
-          </a>
+        <div class="header-container">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="Chuchu.png" alt="Chuchu logo">
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" style="color: hotpink;">&#9776;</label>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a href="impacts.html" class="nav-link">Impacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="tracker.html" class="nav-link">Period-Tracker</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navbar-menu">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon" style="color: hotpink;">&#9776;</label>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="impacts.html" class="nav-link">Impacts</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="tracker.html" class="nav-link">Period-Tracker</a>
-            </li>
-          </ul>
-        </nav>        
       </div>
-            </div>
     </header>
     <div class="black-line"></div>
 
@@ -137,91 +139,84 @@
           <div class="section-body">
             <div class="overlay"></div>
             <section class="section-inner">
-              <h2 class="section-title" style="text-align: center; color:white;">Our Period Tracker is a user-friendly tool that allows you to effortlessly monitor and manage your menstrual cycle.</h2>
+              <h2 class="section-title" style="text-align: center; color:white;">Our Period Tracker is a user-friendly
+                tool that allows you to effortlessly monitor and manage your menstrual cycle.</h2>
             </section>
           </div>`
         </div>
       </section>
-  <div class="tracker-container">
-    <h1 style="color: hotpink;">Period Tracker</h1>
-    <form id="tracker-form">
-      <label for="last-period-date" style="color: hotpink;">Last Period Start Date:</label>
-      <input type="date" id="last-period-date" name="last-period-date" required style="color: hotpink;"><br>
-      <label for="cycle-length" style="color: hotpink;">Average Cycle Length (days):</label>
-      <input type="number" id="cycle-length" name="cycle-length" min="21" max="35" required style="color: hotpink;"><br>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="tracker-info"></div>
-  </div>
+      <div class="tracker-container">
+        <h1 style="color: hotpink;">Period Tracker</h1>
+        <form id="tracker-form">
+          <label for="last-period-date" style="color: hotpink;">Last Period Start Date:</label>
+          <input type="date" id="last-period-date" name="last-period-date" required style="color: hotpink;"><br>
+          <label for="cycle-length" style="color: hotpink;">Average Cycle Length (days):</label>
+          <input type="number" id="cycle-length" name="cycle-length" min="21" max="35" required
+            style="color: hotpink;"><br>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="tracker-info"></div>
+      </div>
 
-  <!– Footer –>
-  <footer class="footer" data-section-theme="dark">
-    <div  class="container">
-      <div class="row">
-        <div class="col-1-2">
-          <div class="img">
-          <img src="Chuchu.png" alt="Chuchu logo">
-          </div>
-          <address class="footer-address">
-            41. Victoria Ironsi Crescent,<br>
-            4th Avenue,<br>
-            Gwarimpa,
-            Abuja FCT,
-            Nigeria
-          </address>
-        </div>
-        <div class="col-1-2">
-          <div class="social-icons">
-            <div class="lik">
-            <a href="https://www.linkedin.com/company/87376039/admin/feed/posts/" class="social-icon">
-              <img src="linkedin.svg" alt="LinkedIn" style="margin-bottom: -35px; margin-left: 100px;">
-            </a>
+      <!– Footer –>
+        <!– Footer –>
+          <footer class="footer" data-section-theme="dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-1-2">
+                  <div class="img">
+                    <img src="Chuchu.png" alt="Chuchu logo">
+                  </div>
+                  <address class="footer-address">
+                    41. Victoria Ironsi Crescent,<br>
+                    4th Avenue,<br>
+                    Gwarimpa,
+                    Abuja FCT,
+                    Nigeria
+                  </address>
+                </div>
+
+                <div class="links" style="display: flex; margin-top:-100px;">
+                  <div class="sitemap">
+                    <h4>Site Map</h4>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="impacts.html">Impact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="gmail">
-            <a href="mailto:info@chuchusofties.com" class="social-icon">
-              <img src="gmauil.png" alt="Gmail" style="margin-left: 50px;">
-            </a>
+            <hr>
+            <div class="row">
+              <div class="col-1-2">
+                <p class="footer-copyright">© 2024 Chuchu <br>
+                  Made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.
+                </p>
+              </div>
+              <div class="col-1-2">
+                <ul class="footer-nav nav">
+                  <li class="footer-nav-item nav-item">
+                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                      class="footer-nav-link">Terms of use</a>
+                  </li>
+                  <li class="footer-nav-item nav-item">
+                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                      class="footer-nav-link">Privacy Policy</a>
+                  </li>
+                  <li class="footer-nav-item nav-item">
+                    <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing"
+                      class="footer-nav-link">Cookie Policy</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-              <a href="https://www.instagram.com/chuchu_softies/" class="social-icon">
-                <img src="Insta.jpeg" alt="Instagram" style="width: 200px;">
-              </a>
-          </div>
-          <div class="links" style="display: flex; margin-top:-100px;">
-          <div class="sitemap">
-            <h4>Site Map</h4>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="impacts.html">Impact</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-          </div>
-          </div>
-          <div class="back">
-            <button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-1-2">
-          <p class="footer-copyright">© 2024 Chuchu, made with <strong style="color: hotpink; font-size: 30px;">♥</strong> by Chuchu Softies.</p>
-        </div>
-        <div class="col-1-2">
-          <ul class="footer-nav nav">
-            <li class="footer-nav-item nav-item">
-              <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Terms of use</a>
-            </li>
-            <li class="footer-nav-item nav-item">
-              <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Privacy Policy</a>
-            </li>
-            <li class="footer-nav-item nav-item">
-              <a href="https://drive.google.com/file/d/1_47YG2HqlXm_L2qZDRvcPSDCUwptBm9s/view?usp=sharing" class="footer-nav-link">Cookie Policy</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script><script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-  <script src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>    
+            </div>
+          </footer>
+          <script src="script.js"></script>
+          <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+          <script
+            src="https://mediafiles.botpress.cloud/9717fdb8-9df9-4b2c-9299-df6916f2e07f/webchat/v2/config.js"></script>
 </body>
+
 </html>
